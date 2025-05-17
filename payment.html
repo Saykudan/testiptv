@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamWave - Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in forwards;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .checkout-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .checkout-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .checkout-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(6,182,212,0.05), rgba(59,130,246,0.05));
+            z-index: 0;
+        }
+        .checkout-card-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+        .secure-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: #e5e7eb;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: #1e3a8a;
+            margin: 0.25rem;
+        }
+        .secure-badge i {
+            margin-right: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6,182,212,0.1);
+        }
+        .error-message {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        .submit-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #f59e0b;
+            color: #1e3a8a;
+            font-weight: bold;
+            border-radius: 9999px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            width: 100%;
+            justify-content: center;
+        }
+        .submit-button:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+        }
+        .submit-button i {
+            margin-left: 0.5rem;
+        }
+        .price-display {
+            background: linear-gradient(135deg, rgba(6,182,212,0.1), rgba(59,130,246,0.1));
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .price-display h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        .price-display p {
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin: 0.5rem 0;
+        }
+        #loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #success-message {
+            display: none;
+            background-color: #10B981;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            animation: fadeIn 1s ease-in forwards;
+            text-align: center;
+        }
+        @media (max-width: 640px) {
+            .checkout-container {
+                padding: 0 1rem;
+            }
+            .checkout-card-content {
+                padding: 1.5rem;
+            }
+            .submit-button {
+                padding: 0.75rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div id="loading-overlay">
+        <div class="animate-spin text-6xl text-cyan-400 mb-4">
+            <i class="fas fa-circle-notch"></i>
+        </div>
+        <p class="text-white text-xl">Processing your order...</p>
+    </div>
+
+    <header class="fixed top-0 left-0 right-0 bg-blue-900 text-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center space-x-4 group">
+                <i class="fas fa-play-circle text-4xl text-cyan-400 group-hover:scale-110 transition-transform duration-300"></i>
+                <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-white bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-blue-200 transition-all duration-300">StreamWave</div>
+            </a>
+            <a href="/" class="text-lg hover:text-cyan-400 transition-colors duration-200">Back to Home</a>
+        </div>
+    </header>
+
+    <div class="checkout-container mt-20">
+        <div class="checkout-card animate-fade-in">
+            <div class="checkout-card-content">
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center animate-fade-in delay-100">Checkout</h2>
+                <div class="price-display animate-fade-in delay-200">
+                    <h3 id="plan-name">Selected Plan</h3>
+                    <p id="plan-price">$0.00</p>
+                    <p class="text-sm text-gray-600">Premium IPTV Subscription</p>
+                </div>
+                <div class="flex flex-wrap justify-center mb-6 animate-fade-in delay-200">
+                    <div class="secure-badge"><i class="fas fa-lock"></i> Secure Checkout</div>
+                    <div class="secure-badge"><i class="fas fa-shield-alt"></i> Trusted Payment</div>
+                    <div class="secure-badge"><i class="fas fa-credit-card"></i> Safe Transactions</div>
+                </div>
+                <div id="success-message">
+                    <i class="fas fa-check-circle text-2xl mb-2"></i>
+                    <p class="text-lg">Order information sent successfully!</p>
+                    <p class="text-sm mt-2">We'll contact you shortly with payment instructions.</p>
+                </div>
+                
+                <!-- FormSubmit.co form that will actually send emails -->
+                <form id="checkout-form" action="https://formsubmit.co/contactiptvcore@gmail.com" method="POST" class="animate-fade-in delay-300">
+                    <!-- FormSubmit configuration fields -->
+                    <input type="hidden" name="_subject" id="form-subject" value="New StreamWave Order">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" id="form-next-url" value="">
+                    
+                    <!-- Order details (hidden fields) -->
+                    <input type="hidden" name="package_type" id="package-type-hidden">
+                    <input type="hidden" name="package_duration" id="package-duration-hidden">
+                    <input type="hidden" name="package_lines" id="package-lines-hidden">
+                    <input type="hidden" name="package_price" id="package-price-hidden">
+                    <input type="hidden" name="order_date" id="order-date-hidden">
+                    
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                        <div class="error-message" id="full-name-error">Please enter your full name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="" disabled selected>Select Payment Method</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="crypto">Cryptocurrency</option>
+                        </select>
+                        <div class="error-message" id="payment-method-error">Please select a payment method.</div>
+                    </div>
+                    <button type="submit" class="submit-button">Proceed to Payment <i class="fas fa-arrow-circle-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto py-6 bg-blue-900 text-white text-center">
+        <p>© 2025 StreamWave. All rights reserved.</p>
+    </footer>
+
+    <script>
+        console.log('Checkout page loaded at', new Date().toISOString());
+
+        // Simplified pricing data for validation
+        const pricingData = {
+            silver: {
+                '1': [
+                    { months: '1 Month', price: 15.94 },
+                    { months: '3 Months', price: 39.94 },
+                    { months: '6 Months', price: 48.94 },
+                    { months: '12 Months', price: 67.94 }
+                ],
+                '2': [
+                    { months: '1 Month', price: 25.94 },
+                    { months: '3 Months', price: 59.94 },
+                    { months: '6 Months', price: 68.94 },
+                    { months: '12 Months', price: 104.94 }
+                ],
+                '3': [
+                    { months: '1 Month', price: 45.94 },
+                    { months: '3 Months', price: 79.94 },
+                    { months: '6 Months', price: 99.94 },
+                    { months: '12 Months', price: 149.94 }
+                ]
+            },
+            gold: {
+                '1': [
+                    { months: '1 Month', price: 18.95 },
+                    { months: '3 Months', price: 42.95 },
+                    { months: '6 Months', price: 53.95 },
+                    { months: '12 Months', price: 75.95 }
+                ],
+                '2': [
+                    { months: '1 Month', price: 28.95 },
+                    { months: '3 Months', price: 62.95 },
+                    { months: '6 Months', price: 73.95 },
+                    { months: '12 Months', price: 118.95 }
+                ],
+                '3': [
+                    { months: '1 Month', price: 38.95 },
+                    { months: '3 Months', price: 82.95 },
+                    { months: '6 Months', price: 97.95 },
+                    { months: '12 Months', price: 169.95 }
+                ]
+            }
+        };
+
+        // Load plan from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const packageType = params.get('package')?.toLowerCase() || 'silver';
+        const lines = params.get('lines') || '1';
+        const months = params.get('months') || '1 Month';
+        console.log('Parsed URL parameters:', { packageType, lines, months });
+
+        // Validate and display plan
+        const planNameElement = document.getElementById('plan-name');
+        const planPriceElement = document.getElementById('plan-price');
+        let selectedPlan = null;
+
+        if (pricingData[packageType]?.[lines]) {
+            selectedPlan = pricingData[packageType][lines].find(plan => plan.months === months);
+        }
+
+        if (selectedPlan) {
+            planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
+            planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
+            console.log('Plan displayed:', selectedPlan);
+            
+            // Update hidden fields for FormSubmit
+            document.getElementById('package-type-hidden').value = packageType.charAt(0).toUpperCase() + packageType.slice(1);
+            document.getElementById('package-duration-hidden').value = months;
+            document.getElementById('package-lines-hidden').value = lines;
+            document.getElementById('package-price-hidden').value = `$${selectedPlan.price.toFixed(2)}`;
+            document.getElementById('order-date-hidden').value = new Date().toLocaleString();
+            
+            // Customize the email subject
+            document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months}`;
+            
+            // Set the return URL after form submission (this creates a custom success page)
+            const currentUrl = window.location.href.split('?')[0]; // Get base URL without parameters
+            document.getElementById('form-next-url').value = `${currentUrl}?order=success&package=${packageType}&lines=${lines}&months=${encodeURIComponent(months)}`;
+        } else {
+            planNameElement.textContent = 'Invalid Plan';
+            planPriceElement.textContent = '$0.00';
+            console.warn('Invalid plan parameters');
+        }
+
+        // Check if returning from successful form submission
+        if (params.get('order') === 'success') {
+            const form = document.getElementById('checkout-form');
+            const successMessage = document.getElementById('success-message');
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+        }
+        
+        // Form validation (client-side)
+        const form = document.getElementById('checkout-form');
+        const loadingOverlay = document.getElementById('loading-overlay');
+        
+        form.addEventListener('submit', (e) => {
+            // Don't prevent default form submission - we want the form to actually submit
+            // But we can still validate and show loading overlay
+            
+            let isValid = true;
+            
+            const fullName = document.getElementById('full-name');
+            const fullNameError = document.getElementById('full-name-error');
+            const fullNameValue = fullName.value.trim();
+            if (!fullNameValue) {
+                e.preventDefault(); // Only prevent if validation fails
+                fullNameError.style.display = 'block';
+                isValid = false;
+                console.log('Validation failed: Empty full name');
+            } else {
+                fullNameError.style.display = 'none';
+            }
+
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailValue = email.value.trim();
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
+                e.preventDefault(); // Only prevent if validation fails
+                emailError.style.display = 'block';
+                isValid = false;
+                console.log('Validation failed: Invalid email');
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            const paymentMethod = document.getElementById('payment-method');
+            const paymentMethodError = document.getElementById('payment-method-error');
+            const paymentMethodValue = paymentMethod.value;
+            if (!paymentMethodValue) {
+                e.preventDefault(); // Only prevent if validation fails
+                paymentMethodError.style.display = 'block';
+                isValid = false;
+                console.log('Validation failed: No payment method');
+            } else {
+                paymentMethodError.style.display = 'none';
+            }
+
+            if (isValid) {
+                console.log('Validation passed - submitting form to FormSubmit.co');
+                // Show loading overlay while form submits
+                loadingOverlay.style.display = 'flex';
+                
+                // Form will submit normally to FormSubmit.co
+            } else {
+                console.log('Validation failed');
+            }
+        });
+    </script>
+</body>
+</html>
