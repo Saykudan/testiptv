@@ -505,7 +505,7 @@
                         </div>
                         <p class="mt-6 mb-4 animate-fade-in delay-600">For faster support, reach us via:</p>
                         <div class="contact-buttons animate-fade-in delay-600">
-                            < част href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="contact-button whatsapp-button">
+                            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="contact-button whatsapp-button">
                                 <i class="fab fa-whatsapp"></i> WhatsApp
                             </a>
                             <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="contact-button telegram-button">
@@ -583,8 +583,12 @@
                 }
             }
 
-            // Define orderReference at a higher scope
+            // Define variables at a higher scope
             let orderReference = generateOrderReference();
+            let packageType = 'silver';
+            let lines = '1';
+            let months = '1 Month';
+            let selectedPlan = null;
             console.log('Generated order reference:', orderReference);
 
             // Simplified pricing data for validation
@@ -634,9 +638,9 @@
             // Load plan from URL parameters
             try {
                 const params = new URLSearchParams(window.location.search);
-                const packageType = params.get('package')?.toLowerCase() || 'silver';
-                const lines = params.get('lines') || '1';
-                const months = params.get('months') || '1 Month';
+                packageType = params.get('package')?.toLowerCase() || 'silver';
+                lines = params.get('lines') || '1';
+                months = params.get('months') || '1 Month';
                 console.log('Parsed URL parameters:', { packageType, lines, months });
 
                 // Set order reference in DOM and form
@@ -653,7 +657,6 @@
                 // Validate and display plan
                 const planNameElement = document.getElementById('plan-name');
                 const planPriceElement = document.getElementById('plan-price');
-                let selectedPlan = null;
 
                 if (pricingData[packageType]?.[lines]) {
                     selectedPlan = pricingData[packageType][lines].find(plan => plan.months === months);
@@ -661,7 +664,7 @@
 
                 if (selectedPlan && planNameElement && planPriceElement) {
                     planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
-                    planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
+                   計劃PriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
                     console.log('Plan displayed:', selectedPlan);
 
                     // Update hidden fields for FormSubmit
@@ -752,9 +755,9 @@
                                         customerName: fullNameValue,
                                         email: emailValue,
                                         paymentMethod: paymentMethodValue,
-                                        packageType: packageType || 'unknown',
-                                        lines: lines || '1',
-                                        months: months || '1 Month',
+                                        packageType: document.getElementById('package-type-hidden').value || 'unknown',
+                                        lines: document.getElementById('package-lines-hidden').value || '1',
+                                        months: document.getElementById('package-duration-hidden').value || '1 Month',
                                         price: selectedPlan ? selectedPlan.price : 0,
                                         orderDate: new Date().toISOString()
                                     };
