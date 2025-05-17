@@ -147,11 +147,32 @@
             display: none;
             background-color: #10B981;
             color: white;
-            padding: 1rem 2rem;
+            padding: 2rem;
             border-radius: 8px;
             margin-top: 1rem;
             animation: fadeIn 1s ease-in forwards;
             text-align: center;
+        }
+        #whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        #whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+        #whatsapp-button i {
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
         }
         @media (max-width: 640px) {
             .checkout-container {
@@ -198,19 +219,29 @@
                     <div class="secure-badge"><i class="fas fa-shield-alt"></i> Trusted Payment</div>
                     <div class="secure-badge"><i class="fas fa-credit-card"></i> Safe Transactions</div>
                 </div>
+                
+                <!-- Success message with WhatsApp button -->
                 <div id="success-message">
-                    <i class="fas fa-check-circle text-2xl mb-2"></i>
-                    <p class="text-lg">Order information sent successfully!</p>
-                    <p class="text-sm mt-2">We'll contact you shortly with payment instructions.</p>
+                    <i class="fas fa-check-circle text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Thank You for Your Order!</h3>
+                    <p class="text-lg mb-4">Your order has been received successfully.</p>
+                    <p class="mb-4">We'll contact you shortly with payment instructions. For faster support, you can reach us directly on WhatsApp:</p>
+                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" id="whatsapp-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+                    </a>
+                    <p class="text-sm mt-4">Order reference: <span id="order-reference"></span></p>
                 </div>
                 
-                <!-- FormSubmit.co form that will actually send emails -->
-                <form id="checkout-form" action="https://formsubmit.co/contactiptvcore@gmail.com" method="POST" class="animate-fade-in delay-300">
+                <!-- Hidden iframe for FormSubmit -->
+                <iframe name="hidden-frame" id="hidden-frame" style="display:none;"></iframe>
+                
+                <!-- Form that submits in the background -->
+                <form id="checkout-form" target="hidden-frame" action="https://formsubmit.co/contactiptvcore@gmail.com" method="POST" class="animate-fade-in delay-300">
                     <!-- FormSubmit configuration fields -->
                     <input type="hidden" name="_subject" id="form-subject" value="New StreamWave Order">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" id="form-next-url" value="">
+                    <input type="hidden" name="_next" value="#"> <!-- Prevent redirect -->
                     
                     <!-- Order details (hidden fields) -->
                     <input type="hidden" name="package_type" id="package-type-hidden">
@@ -218,6 +249,7 @@
                     <input type="hidden" name="package_lines" id="package-lines-hidden">
                     <input type="hidden" name="package_price" id="package-price-hidden">
                     <input type="hidden" name="order_date" id="order-date-hidden">
+                    <input type="hidden" name="order_reference" id="order-reference-hidden">
                     
                     <div class="form-group">
                         <label for="full-name">Full Name</label>
@@ -251,6 +283,13 @@
 
     <script>
         console.log('Checkout page loaded at', new Date().toISOString());
+
+        // Generate a random order reference
+        function generateOrderReference() {
+            const timestamp = new Date().getTime().toString().slice(-6);
+            const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+            return `SW-${timestamp}-${random}`;
+        }
 
         // Simplified pricing data for validation
         const pricingData = {
@@ -303,6 +342,11 @@
         const months = params.get('months') || '1 Month';
         console.log('Parsed URL parameters:', { packageType, lines, months });
 
+        // Generate order reference
+        const orderReference = generateOrderReference();
+        document.getElementById('order-reference-hidden').value = orderReference;
+        document.getElementById('order-reference').textContent = orderReference;
+
         // Validate and display plan
         const planNameElement = document.getElementById('plan-name');
         const planPriceElement = document.getElementById('plan-price');
@@ -325,32 +369,20 @@
             document.getElementById('order-date-hidden').value = new Date().toLocaleString();
             
             // Customize the email subject
-            document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months}`;
-            
-            // Set the return URL after form submission (this creates a custom success page)
-            const currentUrl = window.location.href.split('?')[0]; // Get base URL without parameters
-            document.getElementById('form-next-url').value = `${currentUrl}?order=success&package=${packageType}&lines=${lines}&months=${encodeURIComponent(months)}`;
+            document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months} - Ref: ${orderReference}`;
         } else {
             planNameElement.textContent = 'Invalid Plan';
             planPriceElement.textContent = '$0.00';
             console.warn('Invalid plan parameters');
         }
-
-        // Check if returning from successful form submission
-        if (params.get('order') === 'success') {
-            const form = document.getElementById('checkout-form');
-            const successMessage = document.getElementById('success-message');
-            form.style.display = 'none';
-            successMessage.style.display = 'block';
-        }
         
-        // Form validation (client-side)
+        // Form validation and submission
         const form = document.getElementById('checkout-form');
         const loadingOverlay = document.getElementById('loading-overlay');
+        const successMessage = document.getElementById('success-message');
         
         form.addEventListener('submit', (e) => {
-            // Don't prevent default form submission - we want the form to actually submit
-            // But we can still validate and show loading overlay
+            // Don't prevent default - let it submit to the hidden iframe
             
             let isValid = true;
             
@@ -391,15 +423,45 @@
             }
 
             if (isValid) {
-                console.log('Validation passed - submitting form to FormSubmit.co');
+                console.log('Validation passed - submitting form to FormSubmit.co in background');
                 // Show loading overlay while form submits
                 loadingOverlay.style.display = 'flex';
                 
-                // Form will submit normally to FormSubmit.co
+                // Set timeout to show success message (simulate form submission)
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Save order details to localStorage as backup
+                    try {
+                        const orderDetails = {
+                            reference: orderReference,
+                            customerName: fullNameValue,
+                            email: emailValue,
+                            paymentMethod: paymentMethodValue,
+                            packageType: packageType,
+                            lines: lines,
+                            months: months,
+                            price: selectedPlan ? selectedPlan.price : 0,
+                            orderDate: new Date().toISOString()
+                        };
+                        
+                        const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
+                        previousOrders.push(orderDetails);
+                        localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
+                        console.log('Order saved to localStorage:', orderDetails);
+                    } catch (error) {
+                        console.warn('Could not save to localStorage:', error);
+                    }
+                }, 2000);
             } else {
                 console.log('Validation failed');
             }
         });
+        
+        // Set your WhatsApp number
+        document.getElementById('whatsapp-button').href = "https://wa.me/YOUR_WHATSAPP_NUMBER"; // Replace with your actual WhatsApp number
     </script>
 </body>
 </html>
