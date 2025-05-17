@@ -11,11 +11,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', Tahoma,qwertyuiopasdfghjklzxcvbnm, sans-serif;
         }
         
         body {
-            background-color: #e5e7eb; /* Gray background */
+            background-color: #ffffff; /* White background */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -113,6 +113,7 @@
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
         .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
         
         h2 {
             font-size: 2rem;
@@ -194,7 +195,8 @@
         }
         
         .form-group input,
-        .form-group select {
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 0.75rem;
             border: 1px solid #d1d5db;
@@ -204,8 +206,14 @@
             transition: all 0.3s ease;
         }
         
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
         .form-group input:focus,
-        .form-group select:focus {
+        .form-group select:focus,
+        .form-group textarea:focus {
             outline: none;
             border-color: #06b6d4;
             box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
@@ -216,6 +224,37 @@
             font-size: 0.75rem;
             margin-top: 0.25rem;
             display: none;
+        }
+        
+        .note-section {
+            background: transparent; /* No background */
+            margin-bottom: 1.25rem;
+        }
+        
+        .note-section label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .note-section textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .note-section textarea:focus {
+            outline: none;
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
         }
         
         .submit-button {
@@ -346,18 +385,28 @@
                 font-size: 0.875rem;
             }
             
-            .form-group label {
+            .form-group label,
+            .note-section label {
                 font-size: 0.8125rem;
             }
             
             .form-group input,
-            .form-group select {
+            .form-group select,
+            .note-section textarea {
                 padding: 0.6rem;
                 font-size: 0.8125rem;
             }
             
+            .note-section textarea {
+                min-height: 60px;
+            }
+            
             .error-message {
                 font-size: 0.6875rem;
+            }
+            
+            .note-section {
+                margin-bottom: 1.25rem;
             }
             
             .submit-button {
@@ -466,6 +515,10 @@
                             <option value="crypto">Cryptocurrency</option>
                         </select>
                         <div class="error-message" id="payment-method-error">Please select a payment method.</div>
+                    </div>
+                    <div class="note-section animate-fade-in delay-400">
+                        <label for="seller-note">Note for Seller (Optional)</label>
+                        <textarea id="seller-note" name="seller_note"></textarea>
                     </div>
                     <button type="submit" class="submit-button">Proceed to Payment <i class="fas fa-arrow-circle-right"></i></button>
                 </form>
@@ -649,7 +702,8 @@
                                 lines: document.getElementById('package-lines-hidden').value || '1',
                                 months: document.getElementById('package-duration-hidden').value || '1 Month',
                                 price: selectedPlan ? selectedPlan.price : 0,
-                                orderDate: new Date().toISOString()
+                                orderDate: new Date().toISOString(),
+                                sellerNote: document.getElementById('seller-note').value.trim() || '' // Include optional note
                             };
 
                             const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
