@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Complete your StreamWave IPTV subscription checkout securely.">
     <title>StreamWave - Checkout</title>
+    <!-- Note: Tailwind CSS CDN is used for development. For production, install Tailwind via PostCSS or CLI: https://tailwindcss.com/docs/installation -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -504,7 +505,7 @@
                         </div>
                         <p class="mt-6 mb-4 animate-fade-in delay-600">For faster support, reach us via:</p>
                         <div class="contact-buttons animate-fade-in delay-600">
-                            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="contact-button whatsapp-button">
+                            < част href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="contact-button whatsapp-button">
                                 <i class="fab fa-whatsapp"></i> WhatsApp
                             </a>
                             <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="contact-button telegram-button">
@@ -582,6 +583,10 @@
                 }
             }
 
+            // Define orderReference at a higher scope
+            let orderReference = generateOrderReference();
+            console.log('Generated order reference:', orderReference);
+
             // Simplified pricing data for validation
             const pricingData = {
                 silver: {
@@ -634,13 +639,13 @@
                 const months = params.get('months') || '1 Month';
                 console.log('Parsed URL parameters:', { packageType, lines, months });
 
-                // Generate order reference
-                const orderReference = generateOrderReference();
+                // Set order reference in DOM and form
                 const orderReferenceElement = document.getElementById('order-reference');
                 const orderReferenceHidden = document.getElementById('order-reference-hidden');
                 if (orderReferenceElement && orderReferenceHidden) {
                     orderReferenceElement.textContent = orderReference;
                     orderReferenceHidden.value = orderReference;
+                    console.log('Order reference set in DOM and form');
                 } else {
                     console.error('Order reference elements not found');
                 }
@@ -738,24 +743,29 @@
                                 loadingOverlay.style.display = 'none';
                                 checkoutCard.style.display = 'none';
                                 successContainer.style.display = 'block';
-                                console.log('Success page displayed');
+                                console.log('Success page displayed, order reference:', orderReference);
 
-                                const orderDetails = {
-                                    reference: orderReference,
-                                    customerName: fullNameValue,
-                                    email: emailValue,
-                                    paymentMethod: paymentMethodValue,
-                                    packageType: packageType,
-                                    lines: lines,
-                                    months: months,
-                                    price: selectedPlan ? selectedPlan.price : 0,
-                                    orderDate: new Date().toISOString()
-                                };
+                                // Save order details to localStorage
+                                try {
+                                    const orderDetails = {
+                                        reference: orderReference,
+                                        customerName: fullNameValue,
+                                        email: emailValue,
+                                        paymentMethod: paymentMethodValue,
+                                        packageType: packageType || 'unknown',
+                                        lines: lines || '1',
+                                        months: months || '1 Month',
+                                        price: selectedPlan ? selectedPlan.price : 0,
+                                        orderDate: new Date().toISOString()
+                                    };
 
-                                const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
-                                previousOrders.push(orderDetails);
-                                localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
-                                console.log('Order saved to localStorage:', orderDetails);
+                                    const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
+                                    previousOrders.push(orderDetails);
+                                    localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
+                                    console.log('Order saved to localStorage:', orderDetails);
+                                } catch (storageError) {
+                                    console.error('Error saving to localStorage:', storageError);
+                                }
                             } catch (error) {
                                 console.error('Error displaying success page:', error);
                             }
