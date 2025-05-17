@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your StreamWave IPTV subscription checkout securely.">
     <title>StreamWave - Checkout</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
         .animate-fade-in {
             animation: fadeIn 1s ease-in forwards;
@@ -19,9 +24,25 @@
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
         .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+        .delay-600 { animation-delay: 600ms; }
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes checkBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 20px); }
+            100% { transform: translate(0, 0); }
         }
         .checkout-container {
             max-width: 800px;
@@ -143,36 +164,216 @@
             align-items: center;
             flex-direction: column;
         }
-        #success-message {
+        .success-container {
             display: none;
-            background-color: #10B981;
-            color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 1rem;
-            animation: fadeIn 1s ease-in forwards;
+            background: white;
+            width: 100%;
+            max-width: 720px;
+            border-radius: 20px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            animation: slideUp 0.8s ease-out;
             text-align: center;
+            padding: 3rem;
+            position: relative;
+            z-index: 1;
+            margin: 2rem auto;
         }
-        #whatsapp-button {
+        .success-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(59, 130, 246, 0.12));
+            z-index: 0;
+            opacity: 0.8;
+        }
+        .success-content {
+            position: relative;
+            z-index: 1;
+        }
+        .check-icon {
+            font-size: 4rem;
+            color: #10B981;
+            margin-bottom: 2rem;
+            animation: checkBounce 1.5s ease-in-out infinite;
+        }
+        .success-container h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+        .success-container p {
+            font-size: 1.125rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .order-reference {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 2px dashed #bfdbfe;
+            transition: all 0.3s ease;
+        }
+        .order-reference:hover {
+            background: #eff6ff;
+            border-color: #60a5fa;
+            transform: scale(1.02);
+        }
+        .order-reference h2 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .order-reference p {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            letter-spacing: 1px;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .contact-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: #25D366;
-            color: white;
-            font-weight: bold;
-            padding: 0.75rem 1.5rem;
-            border-radius: 9999px;
-            margin-top: 1.5rem;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            padding: 0.875rem 1.75rem;
+            border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s ease;
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
         }
-        #whatsapp-button:hover {
-            background-color: #128C7E;
-            transform: translateY(-2px);
+        .contact-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
         }
-        #whatsapp-button i {
-            margin-right: 0.5rem;
+        .contact-button:hover::before {
+            left: 0;
+        }
+        .whatsapp-button {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+        .whatsapp-button:hover {
+            background: #1da851;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        }
+        .telegram-button {
+            background: #0088cc;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+        }
+        .telegram-button:hover {
+            background: #006699;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 136, 204, 0.4);
+        }
+        .email-button {
+            background: #1e3a8a;
+            color: white;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+        .email-button:hover {
+            background: #15295f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(30, 58, 138, 0.4);
+        }
+        .contact-button i {
+            margin-right: 0.75rem;
             font-size: 1.25rem;
+        }
+        .steps-container {
+            margin-top: 2.5rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc, #eff6ff);
+            border-radius: 16px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.75rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        .step:hover {
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .step-number {
+            display: flex;
+            align-items: center;
+            merupakan: center;
+            width: 2.75rem;
+            height: 2.75rem;
+            background: linear-gradient(135deg, #06b6d4, #0284c7);
+            color: white;
+            font-weight: 700;
+            font-size: 1.125rem;
+            border-radius: 50%;
+            margin-right: 1.25rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 8px rgba(6, 182, 212, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .step:hover .step-number {
+            transform: scale(1.1);
+        }
+        .step-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        .step-content p {
+            font-size: 0.9375rem;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .decorative-wave {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .wave-top-right {
+            top: -50px;
+            right: -50px;
+            animation: float 6s ease-in-out infinite;
+        }
+        .wave-bottom-left {
+            bottom: -50px;
+            left: -50px;
+            animation: float 8s ease-in-out infinite reverse;
         }
         @media (max-width: 640px) {
             .checkout-container {
@@ -184,10 +385,62 @@
             .submit-button {
                 padding: 0.75rem 1.5rem;
             }
+            .success-container {
+                padding: 2rem;
+                max-width: 100%;
+                margin: 1.5rem;
+            }
+            .success-container h1 {
+                font-size: 2rem;
+            }
+            .success-container p {
+                font-size: 1rem;
+            }
+            .check-icon {
+                font-size: 3.25rem;
+                margin-bottom: 1.5rem;
+            }
+            .order-reference {
+                padding: 1.25rem;
+                margin: 1.5rem 0;
+            }
+            .order-reference p {
+                font-size: 1.5rem;
+            }
+            .contact-button {
+                min-width: 130px;
+                padding: 0.75rem 1.25rem;
+                font-size: 0.875rem;
+            }
+            .steps-container {
+                padding: 1.5rem;
+            }
+            .step-number {
+                width: 2.25rem;
+                height: 2.25rem;
+                font-size: 1rem;
+                margin-right: 1rem;
+            }
+            .step-content h3 {
+                font-size: 1.125rem;
+            }
+            .step-content p {
+                font-size: 0.875rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-button {
+                width: 100%;
+                max-width: 200px;
+            }
         }
     </style>
 </head>
-<body class="font-sans">
+<body>
     <div id="loading-overlay">
         <div class="animate-spin text-6xl text-cyan-400 mb-4">
             <i class="fas fa-circle-notch"></i>
@@ -219,30 +472,69 @@
                     <div class="secure-badge"><i class="fas fa-shield-alt"></i> Trusted Payment</div>
                     <div class="secure-badge"><i class="fas fa-credit-card"></i> Safe Transactions</div>
                 </div>
-                
-                <!-- Success message with WhatsApp button -->
-                <div id="success-message">
-                    <i class="fas fa-check-circle text-4xl mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-2">Thank You for Your Order!</h3>
-                    <p class="text-lg mb-4">Your order has been received successfully.</p>
-                    <p class="mb-4">We'll contact you shortly with payment instructions. For faster support, you can reach us directly on WhatsApp:</p>
-                    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" id="whatsapp-button" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contact on WhatsApp
-                    </a>
-                    <p class="text-sm mt-4">Order reference: <span id="order-reference"></span></p>
+
+                <!-- Success message container -->
+                <div id="success-container" class="success-container">
+                    <div class="decorative-wave wave-top-right"></div>
+                    <div class="decorative-wave wave-bottom-left"></div>
+                    <div class="success-content">
+                        <i class="fas fa-check-circle check-icon animate-fade-in delay-100"></i>
+                        <h1 class="animate-fade-in delay-200">Thank You for Your Order!</h1>
+                        <p class="animate-fade-in delay-300">Your order has been received successfully.</p>
+                        <p class="animate-fade-in delay-300">We'll contact you shortly with payment instructions to complete your purchase.</p>
+                        <div class="order-reference animate-fade-in delay-400">
+                            <h2>Order Reference</h2>
+                            <p id="order-reference">SW-552107-5737</p>
+                        </div>
+                        <div class="steps-container animate-fade-in delay-500">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Payment Instructions</h3>
+                                    <p>We'll send you detailed payment instructions shortly via email.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Account Setup</h3>
+                                    <p>Once payment is confirmed, we'll set up your streaming account.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Start Streaming</h3>
+                                    <p>You'll receive login details to start enjoying your premium content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-6 mb-4 animate-fade-in delay-600">For faster support, reach us via:</p>
+                        <div class="contact-buttons animate-fade-in delay-600">
+                            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="contact-button whatsapp-button">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="contact-button telegram-button">
+                                <i class="fab fa-telegram-plane"></i> Telegram
+                            </a>
+                            <a href="mailto:contactiptvcore@gmail.com" class="contact-button email-button">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <!-- Hidden iframe for FormSubmit -->
                 <iframe name="hidden-frame" id="hidden-frame" style="display:none;"></iframe>
-                
+
                 <!-- Form that submits in the background -->
                 <form id="checkout-form" target="hidden-frame" action="https://formsubmit.co/contactiptvcore@gmail.com" method="POST" class="animate-fade-in delay-300">
                     <!-- FormSubmit configuration fields -->
                     <input type="hidden" name="_subject" id="form-subject" value="New StreamWave Order">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="#"> <!-- Prevent redirect -->
-                    
+                    <input type="hidden" name="_next" value="#">
+
                     <!-- Order details (hidden fields) -->
                     <input type="hidden" name="package_type" id="package-type-hidden">
                     <input type="hidden" name="package_duration" id="package-duration-hidden">
@@ -250,7 +542,7 @@
                     <input type="hidden" name="package_price" id="package-price-hidden">
                     <input type="hidden" name="order_date" id="order-date-hidden">
                     <input type="hidden" name="order_reference" id="order-reference-hidden">
-                    
+
                     <div class="form-group">
                         <label for="full-name">Full Name</label>
                         <input type="text" id="full-name" name="full_name" required>
@@ -360,14 +652,14 @@
             planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
             planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
             console.log('Plan displayed:', selectedPlan);
-            
+
             // Update hidden fields for FormSubmit
             document.getElementById('package-type-hidden').value = packageType.charAt(0).toUpperCase() + packageType.slice(1);
             document.getElementById('package-duration-hidden').value = months;
             document.getElementById('package-lines-hidden').value = lines;
             document.getElementById('package-price-hidden').value = `$${selectedPlan.price.toFixed(2)}`;
             document.getElementById('order-date-hidden').value = new Date().toLocaleString();
-            
+
             // Customize the email subject
             document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months} - Ref: ${orderReference}`;
         } else {
@@ -375,22 +667,22 @@
             planPriceElement.textContent = '$0.00';
             console.warn('Invalid plan parameters');
         }
-        
+
         // Form validation and submission
         const form = document.getElementById('checkout-form');
         const loadingOverlay = document.getElementById('loading-overlay');
-        const successMessage = document.getElementById('success-message');
-        
+        const successContainer = document.getElementById('success-container');
+        const checkoutContainer = document.querySelector('.checkout-container');
+        const header = document.querySelector('header');
+
         form.addEventListener('submit', (e) => {
-            // Don't prevent default - let it submit to the hidden iframe
-            
             let isValid = true;
-            
+
             const fullName = document.getElementById('full-name');
             const fullNameError = document.getElementById('full-name-error');
             const fullNameValue = fullName.value.trim();
             if (!fullNameValue) {
-                e.preventDefault(); // Only prevent if validation fails
+                e.preventDefault();
                 fullNameError.style.display = 'block';
                 isValid = false;
                 console.log('Validation failed: Empty full name');
@@ -402,7 +694,7 @@
             const emailError = document.getElementById('email-error');
             const emailValue = email.value.trim();
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
-                e.preventDefault(); // Only prevent if validation fails
+                e.preventDefault();
                 emailError.style.display = 'block';
                 isValid = false;
                 console.log('Validation failed: Invalid email');
@@ -414,7 +706,7 @@
             const paymentMethodError = document.getElementById('payment-method-error');
             const paymentMethodValue = paymentMethod.value;
             if (!paymentMethodValue) {
-                e.preventDefault(); // Only prevent if validation fails
+                e.preventDefault();
                 paymentMethodError.style.display = 'block';
                 isValid = false;
                 console.log('Validation failed: No payment method');
@@ -424,16 +716,16 @@
 
             if (isValid) {
                 console.log('Validation passed - submitting form to FormSubmit.co in background');
-                // Show loading overlay while form submits
                 loadingOverlay.style.display = 'flex';
-                
-                // Set timeout to show success message (simulate form submission)
+
                 setTimeout(() => {
                     loadingOverlay.style.display = 'none';
                     form.style.display = 'none';
-                    successMessage.style.display = 'block';
-                    
-                    // Save order details to localStorage as backup
+                    checkoutContainer.style.display = 'none';
+                    header.style.display = 'none';
+                    successContainer.style.display = 'block';
+                    document.body.style.background = 'linear-gradient(180deg, #e5e7eb 0%, #d1d5db 100%)';
+
                     try {
                         const orderDetails = {
                             reference: orderReference,
@@ -446,7 +738,7 @@
                             price: selectedPlan ? selectedPlan.price : 0,
                             orderDate: new Date().toISOString()
                         };
-                        
+
                         const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
                         previousOrders.push(orderDetails);
                         localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
@@ -459,9 +751,11 @@
                 console.log('Validation failed');
             }
         });
-        
-        // Set your WhatsApp number
-        document.getElementById('whatsapp-button').href = "https://wa.me/YOUR_WHATSAPP_NUMBER"; // Replace with your actual WhatsApp number
+
+        // Set contact links
+        document.querySelector('.whatsapp-button').href = "https://wa.me/YOUR_WHATSAPP_NUMBER"; // e.g., https://wa.me/+1234567890
+        document.querySelector('.telegram-button').href = "https://t.me/YOUR_TELEGRAM_USERNAME"; // e.g., https://t.me/StreamWaveSupport
+        document.querySelector('.email-button').href = "mailto:contactiptvcore@gmail.com";
     </script>
 </body>
 </html>
