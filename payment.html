@@ -18,157 +18,13 @@
             flex-direction: column;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in forwards;
-        }
-        .delay-100 { animation-delay: 100ms; }
-        .delay-200 { animation-delay: 200ms; }
-        .delay-300 { animation-delay: 300ms; }
-        .delay-400 { animation-delay: 400ms; }
-        .delay-500 { animation-delay: 500ms; }
-        .delay-600 { animation-delay: 600ms; }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes checkBounce {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-        }
-        @keyframes float {
-            0% { transform: translate(0, 0); }
-            50% { transform: translate(20px, 20px); }
-            100% { transform: translate(0, 0); }
-        }
-        .checkout-container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-        .checkout-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .checkout-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(6,182,212,0.05), rgba(59,130,246,0.05));
-            z-index: 0;
-        }
-        .checkout-card-content {
-            position: relative;
-            z-index: 1;
-            padding: 2rem;
-        }
-        .secure-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            background: #e5e7eb;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            color: #1e3a8a;
-            margin: 0.25rem;
-        }
-        .secure-badge i {
-            margin-right: 0.5rem;
-        }
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            color: #1e3a8a;
-            margin-bottom: 0.5rem;
-        }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 1rem;
-        }
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #06b6d4;
-            box-shadow: 0 0 0 3px rgba(6,182,212,0.1);
-        }
-        .error-message {
-            color: #dc2626;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-            display: none;
-        }
-        .submit-button {
-            display: inline-flex;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: #f59e0b;
-            color: #1e3a8a;
-            font-weight: bold;
-            border-radius: 9999px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            font-size: 1rem;
-            width: 100%;
-            justify-content: center;
-        }
-        .submit-button:hover {
-            background: #d97706;
-            transform: translateY(-2px);
-        }
-        .submit-button i {
-            margin-left: 0.5rem;
-        }
-        .price-display {
-            background: linear-gradient(135deg, rgba(6,182,212,0.1), rgba(59,130,246,0.1));
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .price-display h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #1e3a8a;
-        }
-        .price-display p {
-            font-size: 2rem;
-            color: #1e3a8a;
-            margin: 0.5rem 0;
-        }
-        #loading-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 999;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+        /* Success container styles */
         .success-container {
             display: none;
             background: white;
             width: 100%;
             max-width: 720px;
+            min-height: 600px;
             border-radius: 20px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
             overflow: hidden;
@@ -330,7 +186,7 @@
         .step-number {
             display: flex;
             align-items: center;
-            merupakan: center;
+            justify-content: center;
             width: 2.75rem;
             height: 2.75rem;
             background: linear-gradient(135deg, #06b6d4, #0284c7);
@@ -374,6 +230,143 @@
             bottom: -50px;
             left: -50px;
             animation: float 8s ease-in-out infinite reverse;
+        }
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes checkBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 20px); }
+            100% { transform: translate(0, 0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .checkout-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .checkout-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .checkout-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(6,182,212,0.05), rgba(59,130,246,0.05));
+            z-index: 0;
+        }
+        .checkout-card-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+        .secure-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: #e5e7eb;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: #1e3a8a;
+            margin: 0.25rem;
+        }
+        .secure-badge i {
+            margin-right: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6,182,212,0.1);
+        }
+        .error-message {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        .submit-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #f59e0b;
+            color: #1e3a8a;
+            font-weight: bold;
+            border-radius: 9999px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            width: 100%;
+            justify-content: center;
+        }
+        .submit-button:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+        }
+        .submit-button i {
+            margin-left: 0.5rem;
+        }
+        .price-display {
+            background: linear-gradient(135deg, rgba(6,182,212,0.1), rgba(59,130,246,0.1));
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .price-display h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        .price-display p {
+            font-size: 2rem;
+            color: #1e3a8a;
+            margin: 0.5rem 0;
+        }
+        #loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         @media (max-width: 640px) {
             .checkout-container {
@@ -574,188 +567,224 @@
     </footer>
 
     <script>
-        console.log('Checkout page loaded at', new Date().toISOString());
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Checkout page loaded at', new Date().toISOString());
 
-        // Generate a random order reference
-        function generateOrderReference() {
-            const timestamp = new Date().getTime().toString().slice(-6);
-            const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-            return `SW-${timestamp}-${random}`;
-        }
-
-        // Simplified pricing data for validation
-        const pricingData = {
-            silver: {
-                '1': [
-                    { months: '1 Month', price: 15.94 },
-                    { months: '3 Months', price: 39.94 },
-                    { months: '6 Months', price: 48.94 },
-                    { months: '12 Months', price: 67.94 }
-                ],
-                '2': [
-                    { months: '1 Month', price: 25.94 },
-                    { months: '3 Months', price: 59.94 },
-                    { months: '6 Months', price: 68.94 },
-                    { months: '12 Months', price: 104.94 }
-                ],
-                '3': [
-                    { months: '1 Month', price: 45.94 },
-                    { months: '3 Months', price: 79.94 },
-                    { months: '6 Months', price: 99.94 },
-                    { months: '12 Months', price: 149.94 }
-                ]
-            },
-            gold: {
-                '1': [
-                    { months: '1 Month', price: 18.95 },
-                    { months: '3 Months', price: 42.95 },
-                    { months: '6 Months', price: 53.95 },
-                    { months: '12 Months', price: 75.95 }
-                ],
-                '2': [
-                    { months: '1 Month', price: 28.95 },
-                    { months: '3 Months', price: 62.95 },
-                    { months: '6 Months', price: 73.95 },
-                    { months: '12 Months', price: 118.95 }
-                ],
-                '3': [
-                    { months: '1 Month', price: 38.95 },
-                    { months: '3 Months', price: 82.95 },
-                    { months: '6 Months', price: 97.95 },
-                    { months: '12 Months', price: 169.95 }
-                ]
-            }
-        };
-
-        // Load plan from URL parameters
-        const params = new URLSearchParams(window.location.search);
-        const packageType = params.get('package')?.toLowerCase() || 'silver';
-        const lines = params.get('lines') || '1';
-        const months = params.get('months') || '1 Month';
-        console.log('Parsed URL parameters:', { packageType, lines, months });
-
-        // Generate order reference
-        const orderReference = generateOrderReference();
-        document.getElementById('order-reference-hidden').value = orderReference;
-        document.getElementById('order-reference').textContent = orderReference;
-
-        // Validate and display plan
-        const planNameElement = document.getElementById('plan-name');
-        const planPriceElement = document.getElementById('plan-price');
-        let selectedPlan = null;
-
-        if (pricingData[packageType]?.[lines]) {
-            selectedPlan = pricingData[packageType][lines].find(plan => plan.months === months);
-        }
-
-        if (selectedPlan) {
-            planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
-            planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
-            console.log('Plan displayed:', selectedPlan);
-
-            // Update hidden fields for FormSubmit
-            document.getElementById('package-type-hidden').value = packageType.charAt(0).toUpperCase() + packageType.slice(1);
-            document.getElementById('package-duration-hidden').value = months;
-            document.getElementById('package-lines-hidden').value = lines;
-            document.getElementById('package-price-hidden').value = `$${selectedPlan.price.toFixed(2)}`;
-            document.getElementById('order-date-hidden').value = new Date().toLocaleString();
-
-            // Customize the email subject
-            document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months} - Ref: ${orderReference}`;
-        } else {
-            planNameElement.textContent = 'Invalid Plan';
-            planPriceElement.textContent = '$0.00';
-            console.warn('Invalid plan parameters');
-        }
-
-        // Form validation and submission
-        const form = document.getElementById('checkout-form');
-        const loadingOverlay = document.getElementById('loading-overlay');
-        const successContainer = document.getElementById('success-container');
-        const checkoutContainer = document.querySelector('.checkout-container');
-        const header = document.querySelector('header');
-
-        form.addEventListener('submit', (e) => {
-            let isValid = true;
-
-            const fullName = document.getElementById('full-name');
-            const fullNameError = document.getElementById('full-name-error');
-            const fullNameValue = fullName.value.trim();
-            if (!fullNameValue) {
-                e.preventDefault();
-                fullNameError.style.display = 'block';
-                isValid = false;
-                console.log('Validation failed: Empty full name');
-            } else {
-                fullNameError.style.display = 'none';
+            // Generate a random order reference
+            function generateOrderReference() {
+                try {
+                    const timestamp = new Date().getTime().toString().slice(-6);
+                    const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+                    return `SW-${timestamp}-${random}`;
+                } catch (error) {
+                    console.error('Error generating order reference:', error);
+                    return 'SW-552107-5737'; // Fallback
+                }
             }
 
-            const email = document.getElementById('email');
-            const emailError = document.getElementById('email-error');
-            const emailValue = email.value.trim();
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
-                e.preventDefault();
-                emailError.style.display = 'block';
-                isValid = false;
-                console.log('Validation failed: Invalid email');
-            } else {
-                emailError.style.display = 'none';
-            }
+            // Simplified pricing data for validation
+            const pricingData = {
+                silver: {
+                    '1': [
+                        { months: '1 Month', price: 15.94 },
+                        { months: '3 Months', price: 39.94 },
+                        { months: '6 Months', price: 48.94 },
+                        { months: '12 Months', price: 67.94 }
+                    ],
+                    '2': [
+                        { months: '1 Month', price: 25.94 },
+                        { months: '3 Months', price: 59.94 },
+                        { months: '6 Months', price: 68.94 },
+                        { months: '12 Months', price: 104.94 }
+                    ],
+                    '3': [
+                        { months: '1 Month', price: 45.94 },
+                        { months: '3 Months', price: 79.94 },
+                        { months: '6 Months', price: 99.94 },
+                        { months: '12 Months', price: 149.94 }
+                    ]
+                },
+                gold: {
+                    '1': [
+                        { months: '1 Month', price: 18.95 },
+                        { months: '3 Months', price: 42.95 },
+                        { months: '6 Months', price: 53.95 },
+                        { months: '12 Months', price: 75.95 }
+                    ],
+                    '2': [
+                        { months: '1 Month', price: 28.95 },
+                        { months: '3 Months', price: 62.95 },
+                        { months: '6 Months', price: 73.95 },
+                        { months: '12 Months', price: 118.95 }
+                    ],
+                    '3': [
+                        { months: '1 Month', price: 38.95 },
+                        { months: '3 Months', price: 82.95 },
+                        { months: '6 Months', price: 97.95 },
+                        { months: '12 Months', price: 169.95 }
+                    ]
+                }
+            };
 
-            const paymentMethod = document.getElementById('payment-method');
-            const paymentMethodError = document.getElementById('payment-method-error');
-            const paymentMethodValue = paymentMethod.value;
-            if (!paymentMethodValue) {
-                e.preventDefault();
-                paymentMethodError.style.display = 'block';
-                isValid = false;
-                console.log('Validation failed: No payment method');
-            } else {
-                paymentMethodError.style.display = 'none';
-            }
+            // Load plan from URL parameters
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const packageType = params.get('package')?.toLowerCase() || 'silver';
+                const lines = params.get('lines') || '1';
+                const months = params.get('months') || '1 Month';
+                console.log('Parsed URL parameters:', { packageType, lines, months });
 
-            if (isValid) {
-                console.log('Validation passed - submitting form to FormSubmit.co in background');
-                loadingOverlay.style.display = 'flex';
+                // Generate order reference
+                const orderReference = generateOrderReference();
+                const orderReferenceElement = document.getElementById('order-reference');
+                const orderReferenceHidden = document.getElementById('order-reference-hidden');
+                if (orderReferenceElement && orderReferenceHidden) {
+                    orderReferenceElement.textContent = orderReference;
+                    orderReferenceHidden.value = orderReference;
+                } else {
+                    console.error('Order reference elements not found');
+                }
 
-                setTimeout(() => {
-                    loadingOverlay.style.display = 'none';
-                    form.style.display = 'none';
-                    checkoutContainer.style.display = 'none';
-                    header.style.display = 'none';
-                    successContainer.style.display = 'block';
-                    document.body.style.background = 'linear-gradient(180deg, #e5e7eb 0%, #d1d5db 100%)';
+                // Validate and display plan
+                const planNameElement = document.getElementById('plan-name');
+                const planPriceElement = document.getElementById('plan-price');
+                let selectedPlan = null;
 
-                    try {
-                        const orderDetails = {
-                            reference: orderReference,
-                            customerName: fullNameValue,
-                            email: emailValue,
-                            paymentMethod: paymentMethodValue,
-                            packageType: packageType,
-                            lines: lines,
-                            months: months,
-                            price: selectedPlan ? selectedPlan.price : 0,
-                            orderDate: new Date().toISOString()
-                        };
+                if (pricingData[packageType]?.[lines]) {
+                    selectedPlan = pricingData[packageType][lines].find(plan => plan.months === months);
+                }
 
-                        const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
-                        previousOrders.push(orderDetails);
-                        localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
-                        console.log('Order saved to localStorage:', orderDetails);
-                    } catch (error) {
-                        console.warn('Could not save to localStorage:', error);
+                if (selectedPlan && planNameElement && planPriceElement) {
+                    planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
+                    planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
+                    console.log('Plan displayed:', selectedPlan);
+
+                    // Update hidden fields for FormSubmit
+                    document.getElementById('package-type-hidden').value = packageType.charAt(0).toUpperCase() + packageType.slice(1);
+                    document.getElementById('package-duration-hidden').value = months;
+                    document.getElementById('package-lines-hidden').value = lines;
+                    document.getElementById('package-price-hidden').value = `$${selectedPlan.price.toFixed(2)}`;
+                    document.getElementById('order-date-hidden').value = new Date().toLocaleString();
+                    document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months} - Ref: ${orderReference}`;
+                } else {
+                    if (planNameElement && planPriceElement) {
+                        planNameElement.textContent = 'Invalid Plan';
+                        planPriceElement.textContent = '$0.00';
                     }
-                }, 2000);
-            } else {
-                console.log('Validation failed');
+                    console.warn('Invalid plan parameters or elements not found');
+                }
+            } catch (error) {
+                console.error('Error processing plan:', error);
+            }
+
+            // Form validation and submission
+            const form = document.getElementById('checkout-form');
+            const loadingOverlay = document.getElementById('loading-overlay');
+            const successContainer = document.getElementById('success-container');
+            const checkoutCard = document.querySelector('.checkout-card');
+
+            if (!form || !loadingOverlay || !successContainer || !checkoutCard) {
+                console.error('Critical elements missing:', { form, loadingOverlay, successContainer, checkoutCard });
+                return;
+            }
+
+            form.addEventListener('submit', (e) => {
+                console.log('Form submission started');
+                let isValid = true;
+
+                try {
+                    const fullName = document.getElementById('full-name');
+                    const fullNameError = document.getElementById('full-name-error');
+                    const fullNameValue = fullName.value.trim();
+                    if (!fullNameValue) {
+                        e.preventDefault();
+                        fullNameError.style.display = 'block';
+                        isValid = false;
+                        console.log('Validation failed: Empty full name');
+                    } else {
+                        fullNameError.style.display = 'none';
+                    }
+
+                    const email = document.getElementById('email');
+                    const emailError = document.getElementById('email-error');
+                    const emailValue = email.value.trim();
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
+                        e.preventDefault();
+                        emailError.style.display = 'block';
+                        isValid = false;
+                        console.log('Validation failed: Invalid email');
+                    } else {
+                        emailError.style.display = 'none';
+                    }
+
+                    const paymentMethod = document.getElementById('payment-method');
+                    const paymentMethodError = document.getElementById('payment-method-error');
+                    const paymentMethodValue = paymentMethod.value;
+                    if (!paymentMethodValue) {
+                        e.preventDefault();
+                        paymentMethodError.style.display = 'block';
+                        isValid = false;
+                        console.log('Validation failed: No payment method');
+                    } else {
+                        paymentMethodError.style.display = 'none';
+                    }
+
+                    if (isValid) {
+                        console.log('Validation passed - submitting form');
+                        loadingOverlay.style.display = 'flex';
+
+                        setTimeout(() => {
+                            try {
+                                loadingOverlay.style.display = 'none';
+                                checkoutCard.style.display = 'none';
+                                successContainer.style.display = 'block';
+                                console.log('Success page displayed');
+
+                                const orderDetails = {
+                                    reference: orderReference,
+                                    customerName: fullNameValue,
+                                    email: emailValue,
+                                    paymentMethod: paymentMethodValue,
+                                    packageType: packageType,
+                                    lines: lines,
+                                    months: months,
+                                    price: selectedPlan ? selectedPlan.price : 0,
+                                    orderDate: new Date().toISOString()
+                                };
+
+                                const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
+                                previousOrders.push(orderDetails);
+                                localStorage.setItem('streamwaveOrders', JSON.stringify(previousOrders));
+                                console.log('Order saved to localStorage:', orderDetails);
+                            } catch (error) {
+                                console.error('Error displaying success page:', error);
+                            }
+                        }, 2000);
+                    } else {
+                        console.log('Validation failed');
+                    }
+                } catch (error) {
+                    console.error('Error during form submission:', error);
+                }
+            });
+
+            // Set contact links
+            try {
+                const whatsappButton = document.querySelector('.whatsapp-button');
+                const telegramButton = document.querySelector('.telegram-button');
+                const emailButton = document.querySelector('.email-button');
+                if (whatsappButton && telegramButton && emailButton) {
+                    whatsappButton.href = "https://wa.me/YOUR_WHATSAPP_NUMBER"; // e.g., https://wa.me/+1234567890
+                    telegramButton.href = "https://t.me/YOUR_TELEGRAM_USERNAME"; // e.g., https://t.me/StreamWaveSupport
+                    emailButton.href = "mailto:contactiptvcore@gmail.com";
+                    console.log('Contact links set');
+                } else {
+                    console.error('Contact buttons not found');
+                }
+            } catch (error) {
+                console.error('Error setting contact links:', error);
             }
         });
-
-        // Set contact links
-        document.querySelector('.whatsapp-button').href = "https://wa.me/YOUR_WHATSAPP_NUMBER"; // e.g., https://wa.me/+1234567890
-        document.querySelector('.telegram-button').href = "https://t.me/YOUR_TELEGRAM_USERNAME"; // e.g., https://t.me/StreamWaveSupport
-        document.querySelector('.email-button').href = "mailto:contactiptvcore@gmail.com";
     </script>
 </body>
 </html>
