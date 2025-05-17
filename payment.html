@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', 'Segoe UI', Tahoma,qwertyuiopasdfghjklzxcvbnm, sans-serif;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
@@ -146,7 +146,7 @@
             margin: 0.5rem 0;
         }
         
-        .price-display p {
+        .price-display #plan-description {
             font-size: 0.875rem;
             color: #4b5563;
         }
@@ -227,7 +227,7 @@
         }
         
         .note-section {
-            background: transparent; /* No background */
+            background: transparent;
             margin-bottom: 1.25rem;
         }
         
@@ -372,7 +372,7 @@
                 font-size: 1.5rem;
             }
             
-            .price-display p {
+            .price-display #plan-description {
                 font-size: 0.8125rem;
             }
             
@@ -469,7 +469,7 @@
                 <div class="price-display animate-fade-in delay-200">
                     <h3 id="plan-name">Selected Plan</h3>
                     <p id="plan-price">$0.00</p>
-                    <p>Premium IPTV Subscription</p>
+                    <p id="plan-description">Premium IPTV Subscription</p>
                 </div>
                 <div class="secure-badges animate-fade-in delay-200">
                     <div class="secure-badge"><i class="fas fa-lock"></i> Secure Checkout</div>
@@ -551,52 +551,8 @@
             let packageType = 'silver';
             let lines = '1';
             let months = '1 Month';
-            let selectedPlan = null;
+            let price = 15.94;
             console.log('Generated order reference:', orderReference);
-
-            // Simplified pricing data for validation
-            const pricingData = {
-                silver: {
-                    '1': [
-                        { months: '1 Month', price: 15.94 },
-                        { months: '3 Months', price: 39.94 },
-                        { months: '6 Months', price: 48.94 },
-                        { months: '12 Months', price: 67.94 }
-                    ],
-                    '2': [
-                        { months: '1 Month', price: 25.94 },
-                        { months: '3 Months', price: 59.94 },
-                        { months: '6 Months', price: 68.94 },
-                        { months: '12 Months', price: 104.94 }
-                    ],
-                    '3': [
-                        { months: '1 Month', price: 45.94 },
-                        { months: '3 Months', price: 79.94 },
-                        { months: '6 Months', price: 99.94 },
-                        { months: '12 Months', price: 149.94 }
-                    ]
-                },
-                gold: {
-                    '1': [
-                        { months: '1 Month', price: 18.95 },
-                        { months: '3 Months', price: 42.95 },
-                        { months: '6 Months', price: 53.95 },
-                        { months: '12 Months', price: 75.95 }
-                    ],
-                    '2': [
-                        { months: '1 Month', price: 28.95 },
-                        { months: '3 Months', price: 62.95 },
-                        { months: '6 Months', price: 73.95 },
-                        { months: '12 Months', price: 118.95 }
-                    ],
-                    '3': [
-                        { months: '1 Month', price: 38.95 },
-                        { months: '3 Months', price: 82.95 },
-                        { months: '6 Months', price: 97.95 },
-                        { months: '12 Months', price: 169.95 }
-                    ]
-                }
-            };
 
             // Load plan from URL parameters
             try {
@@ -604,35 +560,30 @@
                 packageType = params.get('package')?.toLowerCase() || 'silver';
                 lines = params.get('lines') || '1';
                 months = params.get('months') || '1 Month';
-                console.log('Parsed URL parameters:', { packageType, lines, months });
+                price = parseFloat(params.get('price')) || 15.94;
+                console.log('Parsed URL parameters:', { packageType, lines, months, price });
 
                 // Validate and display plan
                 const planNameElement = document.getElementById('plan-name');
                 const planPriceElement = document.getElementById('plan-price');
+                const planDescriptionElement = document.getElementById('plan-description');
 
-                if (pricingData[packageType]?.[lines]) {
-                    selectedPlan = pricingData[packageType][lines].find(plan => plan.months === months);
-                }
-
-                if (selectedPlan && planNameElement && planPriceElement) {
+                if (planNameElement && planPriceElement && planDescriptionElement) {
                     planNameElement.textContent = `${packageType.charAt(0).toUpperCase() + packageType.slice(1)} Package - ${months} (${lines} Line${lines > 1 ? 's' : ''})`;
-                    planPriceElement.textContent = `$${selectedPlan.price.toFixed(2)}`;
-                    console.log('Plan displayed:', selectedPlan);
+                    planPriceElement.textContent = `$${price.toFixed(2)}`;
+                    planDescriptionElement.textContent = 'Premium IPTV Subscription';
+                    console.log('Plan displayed:', { packageType, months, lines, price });
 
                     // Update hidden fields for FormSubmit
                     document.getElementById('package-type-hidden').value = packageType.charAt(0).toUpperCase() + packageType.slice(1);
                     document.getElementById('package-duration-hidden').value = months;
                     document.getElementById('package-lines-hidden').value = lines;
-                    document.getElementById('package-price-hidden').value = `$${selectedPlan.price.toFixed(2)}`;
+                    document.getElementById('package-price-hidden').value = `$${price.toFixed(2)}`;
                     document.getElementById('order-date-hidden').value = new Date().toLocaleString();
                     document.getElementById('order-reference-hidden').value = orderReference;
                     document.getElementById('form-subject').value = `New StreamWave Order: ${packageType.toUpperCase()} Package - ${months} - Ref: ${orderReference}`;
                 } else {
-                    if (planNameElement && planPriceElement) {
-                        planNameElement.textContent = 'Invalid Plan';
-                        planPriceElement.textContent = '$0.00';
-                    }
-                    console.warn('Invalid plan parameters or elements not found');
+                    console.warn('Plan display elements not found');
                 }
             } catch (error) {
                 console.error('Error processing plan:', error);
@@ -701,9 +652,9 @@
                                 packageType: document.getElementById('package-type-hidden').value || 'unknown',
                                 lines: document.getElementById('package-lines-hidden').value || '1',
                                 months: document.getElementById('package-duration-hidden').value || '1 Month',
-                                price: selectedPlan ? selectedPlan.price : 0,
+                                price: price,
                                 orderDate: new Date().toISOString(),
-                                sellerNote: document.getElementById('seller-note').value.trim() || '' // Include optional note
+                                sellerNote: document.getElementById('seller-note').value.trim() || ''
                             };
 
                             const previousOrders = JSON.parse(localStorage.getItem('streamwaveOrders') || '[]');
