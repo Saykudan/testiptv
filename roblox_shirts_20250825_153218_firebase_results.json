@@ -1,18 +1,4 @@
 {
-  "success": true,
-  "folder": "roblox_shirts_20250825_153218",
-  "metadata": {
-    "total_shirts": 55,
-    "scraped_at": "2025-08-25T15:45:36.001220",
-    "source_url": "https://rbxdex.com",
-    "includes_detailed_info": true,
-    "download_folder": "/Users/abdelmouhcineabouchouar/Documents/RBLX/roblox_shirts_20250825_153218",
-    "upload_date": "2025-08-25T16:11:28.637622",
-    "successful_uploads": 47,
-    "failed_uploads": 0,
-    "skipped": 8,
-    "firebase_bucket": "robloxskins-ios.firebasestorage.app"
-  },
   "shirts": [
     {
       "name": "Black and FILA Logo",
