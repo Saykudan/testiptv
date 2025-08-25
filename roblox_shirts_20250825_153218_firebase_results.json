@@ -1,0 +1,458 @@
+{
+  "success": true,
+  "folder": "roblox_shirts_20250825_153218",
+  "metadata": {
+    "total_shirts": 55,
+    "scraped_at": "2025-08-25T15:45:36.001220",
+    "source_url": "https://rbxdex.com",
+    "includes_detailed_info": true,
+    "download_folder": "/Users/abdelmouhcineabouchouar/Documents/RBLX/roblox_shirts_20250825_153218",
+    "upload_date": "2025-08-25T16:11:28.637622",
+    "successful_uploads": 47,
+    "failed_uploads": 0,
+    "skipped": 8,
+    "firebase_bucket": "robloxskins-ios.firebasestorage.app"
+  },
+  "shirts": [
+    {
+      "name": "Black and FILA Logo",
+      "id": "7358670942",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358670942.png"
+    },
+    {
+      "name": "Black Amy Shirts",
+      "id": "7358758201",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358758201.png"
+    },
+    {
+      "name": "MLC Spiderman Shirt",
+      "id": "7358725580",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358725580.png"
+    },
+    {
+      "name": "MLC AIX Shirt",
+      "id": "7013160821",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7013160821.png"
+    },
+    {
+      "name": "Rosita Cute :3",
+      "id": "6348943685",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6348943685.png"
+    },
+    {
+      "name": "Ηαяυтσ Σяαηgє Ѕℓєєνє",
+      "id": "4767780287",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/4767780287.png"
+    },
+    {
+      "name": "Yemi",
+      "id": "6308509673",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6308509673.png"
+    },
+    {
+      "name": "Yellow Sleeves",
+      "id": "6807244956",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "Whitty Jacket Friday Night Funkin'",
+      "id": "6704162936",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6704162936.png"
+    },
+    {
+      "name": "White Top",
+      "id": "6807241469",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "White Sleeves",
+      "id": "6824270443",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "Rainbow & Clouds Sleeping Suit [Top]",
+      "id": "1660705387",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/1660705387.png"
+    },
+    {
+      "name": "Qnqcc Fan Shirt",
+      "id": "7358637195",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358637195.png"
+    },
+    {
+      "name": "Puffer Jacket",
+      "id": "6807240448",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6807240448.png"
+    },
+    {
+      "name": "PINK Lace-Up Varsity Crew w/ Blonde",
+      "id": "941326953",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/941326953.png"
+    },
+    {
+      "name": "Peach Sleeves",
+      "id": "6807250944",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6807250944.png"
+    },
+    {
+      "name": "ORIGINAL Supreme X LV Cartoony Rainbow Shirt",
+      "id": "6821337956",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6821337956.png"
+    },
+    {
+      "name": "ORIGINAL Cartoony Rainbow Still Chill Hoodie",
+      "id": "6675491340",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6675491340.png"
+    },
+    {
+      "name": "ORIGINAL Cartoony Rainbow Outline Shirt",
+      "id": "6759746362",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6759746362.png"
+    },
+    {
+      "name": "ORIGINAL Cartoony Rainbow Hoodie Outline",
+      "id": "6647784107",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6647784107.png"
+    },
+    {
+      "name": "ORIGINAL Black and White Evil Hoodie",
+      "id": "6911267120",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6911267120.png"
+    },
+    {
+      "name": "ORIGINAL Adidas Fire and Ice Hoodie",
+      "id": "7268172281",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7268172281.png"
+    },
+    {
+      "name": "Muesli Official Shirt",
+      "id": "7358487484",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358487484.png"
+    },
+    {
+      "name": "MUESLI ICE Vested Shirt",
+      "id": "7358640903",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358640903.png"
+    },
+    {
+      "name": "Lila girls top",
+      "id": "7358539473",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358539473.png"
+    },
+    {
+      "name": "Gucci Shirt Off White",
+      "id": "6995672151",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "Cheese Hoodie",
+      "id": "5623619054",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/5623619054.png"
+    },
+    {
+      "name": "Blue Hoodie",
+      "id": "7100780343",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7100780343.png"
+    },
+    {
+      "name": "Black Nike Arms",
+      "id": "7358764067",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358764067.png"
+    },
+    {
+      "name": "❤️ RED ADIDAS SHIRT ❤️",
+      "id": "1503567210",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "❤️Cute Soft Stripe Pink Sweater With Heart❤️",
+      "id": "7186679734",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7186679734.png"
+    },
+    {
+      "name": "⛓ Emo trendy",
+      "id": "7265474310",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7265474310.png"
+    },
+    {
+      "name": "♡ cute shirt 4 cuties",
+      "id": "7233872437",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "[NEW] Dark Blue Fresh Fitted Jersey",
+      "id": "6805899992",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6805899992.png"
+    },
+    {
+      "name": "{ORIGINAL} New Fire and Ice Adidas Hoodie",
+      "id": "6772101764",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6772101764.png"
+    },
+    {
+      "name": "☠️ Black Crop Top With Tattoo ☠️",
+      "id": "7357814020",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7357814020.png"
+    },
+    {
+      "name": "Red Wc Ultimates Adidas Hoodie",
+      "id": "2926396685",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/2926396685.png"
+    },
+    {
+      "name": "New Sky Blue Stripes Hoodie",
+      "id": "1670440871",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/1670440871.png"
+    },
+    {
+      "name": "Pink Glitter Hoodie",
+      "id": "4847134700",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/4847134700.png"
+    },
+    {
+      "name": "Matcha Tee",
+      "id": "5343744313",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/5343744313.png"
+    },
+    {
+      "name": "Fortnite Hoodie",
+      "id": "2822108585",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "Bape Black Open Jacket",
+      "id": "7358736424",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358736424.png"
+    },
+    {
+      "name": "Black n Pink Plaid",
+      "id": "7267905467",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7267905467.png"
+    },
+    {
+      "name": "Adidas Red Camo Split Hoodie",
+      "id": "7227202341",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7227202341.png"
+    },
+    {
+      "name": "Adidas Galaxy Hoodie",
+      "id": "7050784836",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7050784836.png"
+    },
+    {
+      "name": "Purple Sleeves",
+      "id": "6824269118",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6824269118.png"
+    },
+    {
+      "name": "Purple Adidas Flame Shirt",
+      "id": "6826619439",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": null
+    },
+    {
+      "name": "Ots Black Stussy Crop",
+      "id": "1829171079",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/1829171079.png"
+    },
+    {
+      "name": "Onesie Elephant <3",
+      "id": "7350198881",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7350198881.png"
+    },
+    {
+      "name": "Light Sleeves",
+      "id": "6807360337",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6807360337.png"
+    },
+    {
+      "name": "Guess Jeans Red and White Striped Top",
+      "id": "4583955769",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/4583955769.png"
+    },
+    {
+      "name": "Evil pumpkin Black Shirt",
+      "id": "1086651558",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/1086651558.png"
+    },
+    {
+      "name": "Black Line Sleep Top",
+      "id": "7184756511",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7184756511.png"
+    },
+    {
+      "name": "Blue Axolotl Onesie Hood",
+      "id": "7358575112",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/7358575112.png"
+    },
+    {
+      "name": "Black & Green Hacker Style Hoodie",
+      "id": "6708731648",
+      "category": "👔 Shirts",
+      "limited": false,
+      "unique": false,
+      "url": "https://storage.googleapis.com/robloxskins-ios.firebasestorage.app/roblox_shirts/6708731648.png"
+    }
+  ]
+}
