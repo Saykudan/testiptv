@@ -7,11 +7,6 @@
 #EXTINF:-1 tvg-id="ch2" tvg-name="Test Channel 2" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="Live TV",Test Channel 2 - 4x3 Format
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch3" tvg-name="Test Channel 3" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="Live TV",Test Channel 3 - Advanced
-https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
-
-#EXTINF:-1 tvg-id="ch4" tvg-name="Test Channel 4" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="News",Test Channel 4 - FPS Test
-https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
 
 #--------------------------------------------
 # MOVIES (VOD)
@@ -33,8 +28,6 @@ http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.
 # SERIES
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ser1" tvg-name="Agent 327" tvg-logo="https://agent327.com/wp-content/uploads/2017/05/agent327-poster.jpg" group-title="Series",Agent 327 - Operation Barbershop
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
 
 #EXTINF:-1 tvg-id="ser2" tvg-name="For Bigger Escapes" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg" group-title="Series",For Bigger Escapes
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
