@@ -30,17 +30,23 @@ http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
 #--------------------------------------------
-# SERIES
+# SHORT FILMS (Was Series - Now Movies for Demo)
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ser1_e1" tvg-name="Agent 327 - Ep 1" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Series",Agent 327 - Operation Barbershop
+#EXTINF:-1 tvg-id="short1" tvg-name="Agent 327" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Short Films",Agent 327 - Operation Barbershop
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
 
-#EXTINF:-1 tvg-id="ser1_e2" tvg-name="Agent 327 - Ep 2" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Series",Agent 327 - The Chase
+#EXTINF:-1 tvg-id="short2" tvg-name="Escape" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Short Films",For Bigger Escapes
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
 
-#EXTINF:-1 tvg-id="ser2_e1" tvg-name="Spring - Ep 1" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Series",Spring - Episode 1
+#EXTINF:-1 tvg-id="short3" tvg-name="Fun" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Short Films",For Bigger Fun
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4
 
-#EXTINF:-1 tvg-id="ser2_e2" tvg-name="Spring - Ep 2" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Series",Spring - Episode 2
+#EXTINF:-1 tvg-id="short4" tvg-name="Joyrides" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Short Films",For Bigger Joyrides
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
+
+#EXTINF:-1 tvg-id="short5" tvg-name="Meltdowns" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Short Films",For Bigger Meltdowns
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4
+
+#EXTINF:-1 tvg-id="short6" tvg-name="Elephant Dream" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Movies",Elephant Dream
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
