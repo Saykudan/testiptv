@@ -4,16 +4,16 @@
 # LIVE TV CHANNELS
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ch1" tvg-name="Test Channel 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-us.png" group-title="Live TV",Test Channel 1 - Color Bars
+#EXTINF:-1 tvg-id="ch1" tvg-name="Test Channel 1" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="Live TV",Test Channel 1 - Color Bars
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch2" tvg-name="Test Channel 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/nbc-us.png" group-title="Live TV",Test Channel 2 - 4x3 Format
+#EXTINF:-1 tvg-id="ch2" tvg-name="Test Channel 2" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="Live TV",Test Channel 2 - 4x3 Format
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch3" tvg-name="Test Channel 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/abc-us.png" group-title="Live TV",Test Channel 3 - Advanced
+#EXTINF:-1 tvg-id="ch3" tvg-name="Test Channel 3" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="Live TV",Test Channel 3 - Advanced
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
 
-#EXTINF:-1 tvg-id="ch4" tvg-name="Test Channel 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-us.png" group-title="News",Test Channel 4 - FPS Test
+#EXTINF:-1 tvg-id="ch4" tvg-name="Test Channel 4" tvg-logo="https://raw.githubusercontent.com/Saykudan/testiptv/refs/heads/main/icon-trranspaarent.png" group-title="News",Test Channel 4 - FPS Test
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
 
 #--------------------------------------------
