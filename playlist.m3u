@@ -15,14 +15,7 @@ https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4
 #EXTINF:-1 tvg-id="vod1" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="Movies",Big Buck Bunny (2008)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="vod2" tvg-name="Sintel" tvg-logo="https://durian.blender.org/wp-content/uploads/2010/09/poster_rodeo_net.jpg" group-title="Movies",Sintel (2010)
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
-#EXTINF:-1 tvg-id="vod3" tvg-name="Tears of Steel" tvg-logo="https://mango.blender.org/wp-content/uploads/2012/05/poster_small.jpg" group-title="Movies",Tears of Steel (2012)
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
-
-#EXTINF:-1 tvg-id="vod4" tvg-name="Elephant Dream" tvg-logo="https://download.blender.org/ED/ED_poster_1080p.png" group-title="Movies",Elephant Dream (2006)
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
 #--------------------------------------------
 # SERIES
