@@ -4,46 +4,46 @@
 # LIVE TV CHANNELS
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ch1" tvg-name="Test Channel 1" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Live TV",Test Channel 1 - Color Bars
+#EXTINF:-1 tvg-id="ch1" tvg-name="Test Channel 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-us.png" group-title="Live TV",Test Channel 1 - Color Bars
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch2" tvg-name="Test Channel 2" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Live TV",Test Channel 2 - 4x3 Format
+#EXTINF:-1 tvg-id="ch2" tvg-name="Test Channel 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/nbc-us.png" group-title="Live TV",Test Channel 2 - 4x3 Format
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch3" tvg-name="Test Channel 3" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Live TV",Test Channel 3 - Advanced
+#EXTINF:-1 tvg-id="ch3" tvg-name="Test Channel 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/abc-us.png" group-title="Live TV",Test Channel 3 - Advanced
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
 
-#EXTINF:-1 tvg-id="ch4" tvg-name="Test Channel 4" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="News",Test Channel 4 - FPS Test
+#EXTINF:-1 tvg-id="ch4" tvg-name="Test Channel 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-us.png" group-title="News",Test Channel 4 - FPS Test
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
 
 #--------------------------------------------
 # MOVIES (VOD)
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="vod1" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/poster_bunny_big.jpg" group-title="Movies",Big Buck Bunny (2008)
+#EXTINF:-1 tvg-id="vod1" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="Movies",Big Buck Bunny (2008)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="vod2" tvg-name="Sintel" tvg-logo="https://durian.blender.org/wp-content/uploads/2010/05/sintel_poster.jpg" group-title="Movies",Sintel (2010)
+#EXTINF:-1 tvg-id="vod2" tvg-name="Sintel" tvg-logo="https://durian.blender.org/wp-content/uploads/2010/09/poster_rodeo_net.jpg" group-title="Movies",Sintel (2010)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
 #EXTINF:-1 tvg-id="vod3" tvg-name="Tears of Steel" tvg-logo="https://mango.blender.org/wp-content/uploads/2012/05/poster_small.jpg" group-title="Movies",Tears of Steel (2012)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
-#EXTINF:-1 tvg-id="vod4" tvg-name="Elephant Dream" tvg-logo="https://i.imgur.com/bVfN32F.png" group-title="Movies",Elephant Dream (2006)
+#EXTINF:-1 tvg-id="vod4" tvg-name="Elephant Dream" tvg-logo="https://download.blender.org/ED/ED_poster_1080p.png" group-title="Movies",Elephant Dream (2006)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
 #--------------------------------------------
 # SERIES
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ser1" tvg-name="Agent 327" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Series",Agent 327 - Operation Barbershop
+#EXTINF:-1 tvg-id="ser1" tvg-name="Agent 327" tvg-logo="https://agent327.com/wp-content/uploads/2017/05/agent327-poster.jpg" group-title="Series",Agent 327 - Operation Barbershop
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
 
-#EXTINF:-1 tvg-id="ser2" tvg-name="For Bigger Escapes" tvg-logo="https://i.imgur.com/XGmYnKZ.jpg" group-title="Series",For Bigger Escapes
+#EXTINF:-1 tvg-id="ser2" tvg-name="For Bigger Escapes" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg" group-title="Series",For Bigger Escapes
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
 
-#EXTINF:-1 tvg-id="ser3" tvg-name="For Bigger Fun" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Series",For Bigger Fun
+#EXTINF:-1 tvg-id="ser3" tvg-name="For Bigger Fun" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg" group-title="Series",For Bigger Fun
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4
 
-#EXTINF:-1 tvg-id="ser4" tvg-name="For Bigger Joyrides" tvg-logo="https://i.imgur.com/3JZtLYs.jpg" group-title="Series",For Bigger Joyrides
+#EXTINF:-1 tvg-id="ser4" tvg-name="For Bigger Joyrides" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg" group-title="Series",For Bigger Joyrides
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
