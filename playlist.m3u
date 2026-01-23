@@ -2,128 +2,122 @@
 #--------------------------------------------
 # LIVE TV CHANNELS - LEGAL FREE STREAMS
 #--------------------------------------------
-#EXTINF:-1 tvg-id="nasa" tvg-name="NASA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Public
+#EXTINF:-1 tvg-id="nasa" tvg-name="NASA TV Public" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Public - 24/7 Space Coverage
 https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
 
-#EXTINF:-1 tvg-id="nasatv" tvg-name="NASA TV Media" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Media
+#EXTINF:-1 tvg-id="nasatv" tvg-name="NASA TV Media" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Media - Live Space Events
 https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master.m3u8
 
-#EXTINF:-1 tvg-id="weather" tvg-name="WeatherNation" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/77/WeatherNation_TV_logo.png" group-title="Live TV",WeatherNation TV
+#EXTINF:-1 tvg-id="weather" tvg-name="WeatherNation TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/77/WeatherNation_TV_logo.png" group-title="Live TV",WeatherNation TV - 24/7 Weather
 https://weathernationtv.roku.wurl.com/manifest/playlist.m3u8
 
-#EXTINF:-1 tvg-id="cheddar" tvg-name="Cheddar News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cheddar_News.svg/1200px-Cheddar_News.svg.png" group-title="Live TV",Cheddar News
+#EXTINF:-1 tvg-id="cheddar" tvg-name="Cheddar News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cheddar_News.svg/1200px-Cheddar_News.svg.png" group-title="Live TV",Cheddar News - Business & Tech News
 https://cheddar-cheddar-1-ca.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="abc_news" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/ABC_News_Live_2018.png" group-title="Live TV",ABC News Live
+#EXTINF:-1 tvg-id="abc_news" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/ABC_News_Live_2018.png" group-title="Live TV",ABC News Live - 24/7 Breaking News
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 
-#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7
+#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7 - National & World News
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
-#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_Television_logo.svg" group-title="Live TV",Bloomberg TV
+#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_Television_logo.svg" group-title="Live TV",Bloomberg TV - Financial News
 https://bloomberg-bloomberg-1-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax
+#EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax - News & Opinion
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 
-#EXTINF:-1 tvg-id="pbs" tvg-name="PBS America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/PBS_logo.svg" group-title="Live TV",PBS America
+#EXTINF:-1 tvg-id="pbs" tvg-name="PBS America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/PBS_logo.svg" group-title="Live TV",PBS America - Public Broadcasting
 https://pbs-samsunguk.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="rt" tvg-name="RT News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" group-title="Live TV",RT International
+#EXTINF:-1 tvg-id="rt" tvg-name="RT International" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" group-title="Live TV",RT International - World News
 https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
 
 #--------------------------------------------
 # BLENDER MOVIES (Creative Commons CC-BY)
 #--------------------------------------------
-#EXTINF:-1 tvg-id="blender_channel" tvg-name="Blender Open Movies 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" group-title="Movies",Blender Open Movies Channel
+#EXTINF:-1 tvg-id="blender_channel" tvg-name="Blender Open Movies 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" group-title="Movies",Blender Open Movies Channel - 24/7 Animation Stream
 https://ireplay.tv/test/blender.m3u8
 
-#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="Movies",Big Buck Bunny (2008) - CC-BY 3.0
+#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny (2008)" tvg-logo="https://download.blender.org/demo/movies/BBB/bbb_splash.png" group-title="Movies",Big Buck Bunny (2008) | Comedy | 10min | Director: Sacha Goedegebure | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sintel-poster.jpg/800px-Sintel-poster.jpg" group-title="Movies",Sintel (2010) - CC-BY 3.0
+#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel (2010)" tvg-logo="https://download.blender.org/demo/movies/Sintel.2010.1080p.mkv.jpg" group-title="Movies",Sintel (2010) | Fantasy/Drama | 15min | Director: Colin Levy | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
-#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tears_of_Steel_poster.jpg/800px-Tears_of_Steel_poster.jpg" group-title="Movies",Tears of Steel (2012) - CC-BY 3.0
+#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel (2012)" tvg-logo="https://download.blender.org/demo/movies/ToS/ToS-4k-1920.jpg" group-title="Movies",Tears of Steel (2012) | Sci-Fi/Action | 12min | Director: Ian Hubert | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
-#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Elephants_Dream_s5_both.jpg/800px-Elephants_Dream_s5_both.jpg" group-title="Movies",Elephants Dream (2006) - CC-BY 2.5
+#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream (2006)" tvg-logo="https://download.blender.org/demo/movies/elephantsdream_1024.jpg" group-title="Movies",Elephants Dream (2006) | Surreal/Fantasy | 11min | Director: Bassam Kurdali | CC-BY 2.5
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
 #--------------------------------------------
 # PUBLIC DOMAIN CLASSIC MOVIES
 #--------------------------------------------
-#EXTINF:-1 tvg-id="nightofliving" tvg-name="Night of the Living Dead" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Night_of_the_Living_Dead_affiche.jpg/800px-Night_of_the_Living_Dead_affiche.jpg" group-title="Classic Movies",Night of the Living Dead (1968) - Public Domain
+#EXTINF:-1 tvg-id="nightofliving" tvg-name="Night of the Living Dead (1968)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Night_of_the_Living_Dead_affiche.jpg/800px-Night_of_the_Living_Dead_affiche.jpg" group-title="Classic Movies",Night of the Living Dead (1968) | Horror | 96min | Director: George A. Romero | Public Domain
 https://archive.org/download/night_of_the_living_dead_1968/night_of_the_living_dead_1968_512kb.mp4
 
-#EXTINF:-1 tvg-id="charade" tvg-name="Charade" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Charade_%281963_film%29_poster.jpg/800px-Charade_%281963_film%29_poster.jpg" group-title="Classic Movies",Charade (1963) - Public Domain
+#EXTINF:-1 tvg-id="charade" tvg-name="Charade (1963)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Charade_%281963_film%29_poster.jpg/800px-Charade_%281963_film%29_poster.jpg" group-title="Classic Movies",Charade (1963) | Romance/Thriller | 113min | Stars: Cary Grant, Audrey Hepburn | Public Domain
 https://archive.org/download/Charade_1963/Charade_1963_512kb.mp4
 
-#EXTINF:-1 tvg-id="littleshop" tvg-name="Little Shop of Horrors" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Little_Shop_of_Horrors_1960_Poster.jpg/800px-Little_Shop_of_Horrors_1960_Poster.jpg" group-title="Classic Movies",Little Shop of Horrors (1960) - Public Domain
+#EXTINF:-1 tvg-id="littleshop" tvg-name="Little Shop of Horrors (1960)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Little_Shop_of_Horrors_1960_Poster.jpg/800px-Little_Shop_of_Horrors_1960_Poster.jpg" group-title="Classic Movies",Little Shop of Horrors (1960) | Comedy/Horror | 72min | Director: Roger Corman | Public Domain
 https://archive.org/download/the_little_shop_of_horrors/the_little_shop_of_horrors_512kb.mp4
 
-#EXTINF:-1 tvg-id="hisgirlFriday" tvg-name="His Girl Friday" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/His_Girl_Friday_%281940_poster%29.jpg/800px-His_Girl_Friday_%281940_poster%29.jpg" group-title="Classic Movies",His Girl Friday (1940) - Public Domain
+#EXTINF:-1 tvg-id="hisgirlFriday" tvg-name="His Girl Friday (1940)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/His_Girl_Friday_%281940_poster%29.jpg/800px-His_Girl_Friday_%281940_poster%29.jpg" group-title="Classic Movies",His Girl Friday (1940) | Comedy/Romance | 92min | Stars: Cary Grant, Rosalind Russell | Public Domain
 https://archive.org/download/HisGirlFriday/His_Girl_Friday_512kb.mp4
 
-#EXTINF:-1 tvg-id="planetnine" tvg-name="Plan 9 from Outer Space" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Plan_nine_from_outer_space.jpg/800px-Plan_nine_from_outer_space.jpg" group-title="Classic Movies",Plan 9 from Outer Space (1959) - Public Domain
+#EXTINF:-1 tvg-id="planetnine" tvg-name="Plan 9 from Outer Space (1959)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Plan_nine_from_outer_space.jpg/800px-Plan_nine_from_outer_space.jpg" group-title="Classic Movies",Plan 9 from Outer Space (1959) | Sci-Fi | 79min | Director: Ed Wood | Cult Classic | Public Domain
 https://archive.org/download/Plan9FromOuterSpace_201611/Plan9FromOuterSpace.mp4
 
 #--------------------------------------------
-# SERIES - CAMINANDES (Creative Commons)
+# SERIES - DEMO EPISODES (Google Samples)
 #--------------------------------------------
-#EXTINF:-1 tvg-id="caminandes1" tvg-name="Caminandes 1" tvg-logo="https://studio.blender.org/films/caminandes-1/logo-artwork.jpg" group-title="Series",Caminandes: Llama Drama (2013) - CC-BY 3.0
-https://download.blender.org/demo/movies/caminandes_1_1080p.mp4
+#EXTINF:-1 tvg-id="series1" tvg-name="What We Do in the Shadows" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg" group-title="Series",What Car Can You Get For A Grand? S01E01 | Documentary | Demo Episode
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4
 
-#EXTINF:-1 tvg-id="caminandes2" tvg-name="Caminandes 2" tvg-logo="https://studio.blender.org/films/caminandes-2/logo-artwork.jpg" group-title="Series",Caminandes: Gran Dillama (2013) - CC-BY 3.0
-https://download.blender.org/demo/movies/caminandes_2_1080p.mp4
+#EXTINF:-1 tvg-id="series2" tvg-name="Volleyball" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg" group-title="Series",Volkswagen GTI Review S01E02 | Automotive | Demo Episode
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4
 
-#EXTINF:-1 tvg-id="caminandes3" tvg-name="Caminandes 3" tvg-logo="https://studio.blender.org/films/caminandes-3/logo-artwork.jpg" group-title="Series",Caminandes: Llamigos (2016) - CC-BY 4.0
-https://download.blender.org/demo/movies/caminandes_3_1080p.mp4
-
-#--------------------------------------------
-# SERIES - AGENT 327 (Creative Commons)
-#--------------------------------------------
-#EXTINF:-1 tvg-id="agent327" tvg-name="Agent 327 Operation Barbershop" tvg-logo="https://studio.blender.org/films/agent-327/logo-artwork.jpg" group-title="Series",Agent 327: Operation Barbershop (2017) - CC-BY 4.0
-https://download.blender.org/demo/movies/agent327_1080p.mp4
+#EXTINF:-1 tvg-id="series3" tvg-name="We Are Going On Bullrun" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg" group-title="Series",We Are Going On Bullrun S01E03 | Adventure/Rally | Demo Episode
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4
 
 #--------------------------------------------
 # SHORT FILMS - BLENDER COLLECTION
 #--------------------------------------------
-#EXTINF:-1 tvg-id="spring" tvg-name="Spring" tvg-logo="https://studio.blender.org/films/spring/logo-artwork.jpg" group-title="Short Films",Spring (2019) - CC-BY 4.0
+#EXTINF:-1 tvg-id="spring" tvg-name="Spring (2019)" tvg-logo="https://download.blender.org/demo/movies/spring_poster.jpg" group-title="Short Films",Spring (2019) | Fantasy/Drama | 8min | Director: Andy Goralczyk | Shepherd & Ancient Spirits | CC-BY 4.0
 https://download.blender.org/demo/movies/spring_1080p.mp4
 
-#EXTINF:-1 tvg-id="cosmoslaundromat" tvg-name="Cosmos Laundromat" tvg-logo="https://studio.blender.org/films/cosmos-laundromat/logo-artwork.jpg" group-title="Short Films",Cosmos Laundromat (2015) - CC-BY 4.0
+#EXTINF:-1 tvg-id="cosmoslaundromat" tvg-name="Cosmos Laundromat (2015)" tvg-logo="https://download.blender.org/demo/movies/cosmos_laundromat_poster.jpg" group-title="Short Films",Cosmos Laundromat (2015) | Surreal/Comedy | 12min | Flying Sheep Adventure | CC-BY 4.0
 https://download.blender.org/demo/movies/cosmos_laundromat_1080p.mp4
 
-#EXTINF:-1 tvg-id="glasshalffull" tvg-name="Glass Half" tvg-logo="https://studio.blender.org/films/glass-half/logo-artwork.jpg" group-title="Short Films",Glass Half (2015) - CC-BY 4.0
+#EXTINF:-1 tvg-id="glasshalffull" tvg-name="Glass Half (2015)" tvg-logo="https://download.blender.org/demo/movies/glass_half.jpg" group-title="Short Films",Glass Half (2015) | Comedy | 3min | Art Critics Debate | CC-BY 4.0
 https://download.blender.org/demo/movies/glass_half_1080p.mp4
 
 #--------------------------------------------
 # DEMO CONTENT - GOOGLE SAMPLES
 #--------------------------------------------
-#EXTINF:-1 tvg-id="demo1" tvg-name="For Bigger Escapes" tvg-logo="https://picsum.photos/200?random=40" group-title="Demo Content",For Bigger Escapes
+#EXTINF:-1 tvg-id="demo1" tvg-name="For Bigger Escapes" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg" group-title="Demo Content",For Bigger Escapes - Chromebook Adventure Demo
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
 
-#EXTINF:-1 tvg-id="demo2" tvg-name="For Bigger Fun" tvg-logo="https://picsum.photos/200?random=41" group-title="Demo Content",For Bigger Fun
+#EXTINF:-1 tvg-id="demo2" tvg-name="For Bigger Fun" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg" group-title="Demo Content",For Bigger Fun - Chromebook Entertainment Demo
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4
 
-#EXTINF:-1 tvg-id="demo3" tvg-name="For Bigger Joyrides" tvg-logo="https://picsum.photos/200?random=42" group-title="Demo Content",For Bigger Joyrides
+#EXTINF:-1 tvg-id="demo3" tvg-name="For Bigger Joyrides" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg" group-title="Demo Content",For Bigger Joyrides - Chromebook Performance Demo
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
 
-#EXTINF:-1 tvg-id="demo4" tvg-name="For Bigger Meltdowns" tvg-logo="https://picsum.photos/200?random=43" group-title="Demo Content",For Bigger Meltdowns
+#EXTINF:-1 tvg-id="demo4" tvg-name="For Bigger Meltdowns" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg" group-title="Demo Content",For Bigger Meltdowns - Chromebook Gaming Demo
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4
 
-#EXTINF:-1 tvg-id="demo5" tvg-name="Subaru Outback" tvg-logo="https://picsum.photos/200?random=44" group-title="Demo Content",Subaru Outback On Street
+#EXTINF:-1 tvg-id="demo5" tvg-name="Subaru Outback" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg" group-title="Demo Content",Subaru Outback - Automotive Test Video
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4
 
 #--------------------------------------------
 # TEST STREAMS (APPLE HLS SAMPLES)
 #--------------------------------------------
-#EXTINF:-1 tvg-id="test1" tvg-name="Apple Test Stream 16x9" tvg-logo="https://picsum.photos/200?random=1" group-title="Test Streams",Apple HLS Test 16x9
+#EXTINF:-1 tvg-id="test1" tvg-name="Apple HLS Test 16x9" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Test Stream 16x9 - Multi-bitrate
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="test2" tvg-name="Apple Test Stream 4x3" tvg-logo="https://picsum.photos/200?random=2" group-title="Test Streams",Apple HLS Test 4x3
+#EXTINF:-1 tvg-id="test2" tvg-name="Apple HLS Test 4x3" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Test Stream 4x3 - Legacy Format
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="test3" tvg-name="Apple Advanced Test" tvg-logo="https://picsum.photos/200?random=3" group-title="Test Streams",Apple Advanced HLS
+#EXTINF:-1 tvg-id="test3" tvg-name="Apple HLS Advanced" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Advanced Test - TS Format
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
