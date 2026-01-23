@@ -19,9 +19,6 @@ https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 #EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="Movies",Big Buck Bunny (2008)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Movies",Sintel (2010)
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
-
 #EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Elephants_Dream_s5_both.jpg/800px-Elephants_Dream_s5_both.jpg" group-title="Movies",Elephants Dream (2006)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
