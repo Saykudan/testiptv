@@ -4,20 +4,35 @@
 # LIVE TV CHANNELS
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ch1" tvg-name="Live News 24" tvg-logo="https://picsum.photos/200?random=1" group-title="Live TV",Live News 24
+#EXTINF:-1 tvg-id="ch1" tvg-name="News 24" tvg-logo="https://picsum.photos/200?random=1" group-title="Live TV",News 24
 https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
 
 #EXTINF:-1 tvg-id="ch2" tvg-name="Sports HD" tvg-logo="https://picsum.photos/200?random=2" group-title="Live TV",Sports HD
-https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
 
 #EXTINF:-1 tvg-id="ch3" tvg-name="Music TV" tvg-logo="https://picsum.photos/200?random=3" group-title="Live TV",Music TV
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch4" tvg-name="Documentary Channel" tvg-logo="https://picsum.photos/200?random=4" group-title="Live TV",Documentary Channel
-https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+#EXTINF:-1 tvg-id="ch4" tvg-name="Documentary" tvg-logo="https://picsum.photos/200?random=4" group-title="Live TV",Documentary
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="ch5" tvg-name="Kids Zone" tvg-logo="https://picsum.photos/200?random=5" group-title="Live TV",Kids Zone
+#EXTINF:-1 tvg-id="ch5" tvg-name="Kids Channel" tvg-logo="https://picsum.photos/200?random=5" group-title="Live TV",Kids Channel
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
+
+#EXTINF:-1 tvg-id="ch6" tvg-name="Entertainment" tvg-logo="https://picsum.photos/200?random=6" group-title="Live TV",Entertainment
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="ch7" tvg-name="Cinema Plus" tvg-logo="https://picsum.photos/200?random=7" group-title="Live TV",Cinema Plus
+https://cdn.jwplayer.com/manifests/pZxWPRg4.m3u8
+
+#EXTINF:-1 tvg-id="ch8" tvg-name="Drama HD" tvg-logo="https://picsum.photos/200?random=8" group-title="Live TV",Drama HD
+https://playertest.longtailvideo.com/adaptive/wowzaid3/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ch9" tvg-name="Action TV" tvg-logo="https://picsum.photos/200?random=9" group-title="Live TV",Action TV
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ch10" tvg-name="Family Channel" tvg-logo="https://picsum.photos/200?random=10" group-title="Live TV",Family Channel
+https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8
 
 #--------------------------------------------
 # MOVIES
@@ -35,28 +50,43 @@ http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 #EXTINF:-1 tvg-id="mov4" tvg-name="Tears of Steel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tears_of_Steel_poster.jpg/800px-Tears_of_Steel_poster.jpg" group-title="Movies",Tears of Steel (2012)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
+#EXTINF:-1 tvg-id="mov5" tvg-name="Subaru Adventure" tvg-logo="https://picsum.photos/200?random=30" group-title="Movies",Subaru Adventure
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4
+
+#EXTINF:-1 tvg-id="mov6" tvg-name="Volkswagen Review" tvg-logo="https://picsum.photos/200?random=31" group-title="Movies",Volkswagen Review
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4
+
 #--------------------------------------------
 # SERIES
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="ser1" tvg-name="Adventure Series E01" tvg-logo="https://picsum.photos/200?random=10" group-title="Series",Adventure Series - Episode 1
+#EXTINF:-1 tvg-id="ser1" tvg-name="Adventure S01E01" tvg-logo="https://picsum.photos/200?random=40" group-title="Series",Adventure - S01E01
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4
 
-#EXTINF:-1 tvg-id="ser2" tvg-name="Adventure Series E02" tvg-logo="https://picsum.photos/200?random=11" group-title="Series",Adventure Series - Episode 2
+#EXTINF:-1 tvg-id="ser2" tvg-name="Adventure S01E02" tvg-logo="https://picsum.photos/200?random=41" group-title="Series",Adventure - S01E02
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4
 
-#EXTINF:-1 tvg-id="ser3" tvg-name="Adventure Series E03" tvg-logo="https://picsum.photos/200?random=12" group-title="Series",Adventure Series - Episode 3
+#EXTINF:-1 tvg-id="ser3" tvg-name="Adventure S01E03" tvg-logo="https://picsum.photos/200?random=42" group-title="Series",Adventure - S01E03
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
 
-#EXTINF:-1 tvg-id="ser4" tvg-name="Adventure Series E04" tvg-logo="https://picsum.photos/200?random=13" group-title="Series",Adventure Series - Episode 4
+#EXTINF:-1 tvg-id="ser4" tvg-name="Adventure S01E04" tvg-logo="https://picsum.photos/200?random=43" group-title="Series",Adventure - S01E04
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
+
+#EXTINF:-1 tvg-id="ser5" tvg-name="Travel S01E01" tvg-logo="https://picsum.photos/200?random=44" group-title="Series",Travel Show - S01E01
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4
+
+#EXTINF:-1 tvg-id="ser6" tvg-name="Travel S01E02" tvg-logo="https://picsum.photos/200?random=45" group-title="Series",Travel Show - S01E02
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4
 
 #--------------------------------------------
 # SPORTS
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="sp1" tvg-name="Sports Highlights" tvg-logo="https://picsum.photos/200?random=20" group-title="Sports",Sports Highlights
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4
+#EXTINF:-1 tvg-id="sp1" tvg-name="Sports Center" tvg-logo="https://picsum.photos/200?random=50" group-title="Sports",Sports Center
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
 
-#EXTINF:-1 tvg-id="sp2" tvg-name="Extreme Sports" tvg-logo="https://picsum.photos/200?random=21" group-title="Sports",Extreme Sports
-http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4
+#EXTINF:-1 tvg-id="sp2" tvg-name="Racing HD" tvg-logo="https://picsum.photos/200?random=51" group-title="Sports",Racing HD
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1 tvg-id="sp3" tvg-name="Extreme Sports" tvg-logo="https://picsum.photos/200?random=52" group-title="Sports",Extreme Sports
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
