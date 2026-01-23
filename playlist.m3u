@@ -1,53 +1,55 @@
 #EXTM3U
 #--------------------------------------------
-# LIVE TV CHANNELS - LEGAL FREE STREAMS
+# LIVE TV - FREE NEWS CHANNELS
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="abc_news" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/ABC_News_Live_2018.png" group-title="Live TV",ABC News Live - 24/7 Breaking News
+#EXTINF:-1 tvg-id="abc_news" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/ABC_News_Live_2018.png" group-title="Live TV",ABC News Live
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 
-#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7 - National & World News
+#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
-#EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax - News & Opinion
+#EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 
 #--------------------------------------------
-# BLENDER MOVIES (Creative Commons CC-BY)
+# MOVIES - BLENDER OPEN MOVIES
 #--------------------------------------------
 
-#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny (2008)" tvg-logo="https://m.media-amazon.com/images/M/MV5BNzAzYjczMjAtZjI3Mi00NWU3LThlYmMtMDNjY2EyYjY0YWZmXkEyXkFqcGc@._V1_.jpg" group-title="Movies",Big Buck Bunny (2008) | Comedy | 10min | Director: Sacha Goedegebure | CC-BY 3.0
+#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny" tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="Movies",Big Buck Bunny (2008)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel (2010)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Movies",Sintel (2010) | Fantasy/Drama | 15min | Director: Colin Levy | CC-BY 3.0
+#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sintel-poster.jpg/800px-Sintel-poster.jpg" group-title="Movies",Sintel (2010)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
-#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel (2012)" tvg-logo="https://m.media-amazon.com/images/M/MV5BZmQxMTlmOGMtZDQzMC00ZTBlLTgyMTEtMzQwYzIzNGU0OGQ1XkEyXkFqcGc@._V1_.jpg" group-title="Movies",Tears of Steel (2012) | Sci-Fi/Action | 12min | Director: Ian Hubert | CC-BY 3.0
+#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tears_of_Steel_poster.jpg/800px-Tears_of_Steel_poster.jpg" group-title="Movies",Tears of Steel (2012)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
-#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream (2006)" tvg-logo="https://m.media-amazon.com/images/M/MV5BMzI3NTFlOGUtOWE2MS00NDliLWJmODgtYTY3NDA5MmIzMjg5XkEyXkFqcGc@._V1_.jpg" group-title="Movies",Elephants Dream (2006) | Surreal/Fantasy | 11min | Director: Bassam Kurdali | CC-BY 2.5
+#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Elephants_Dream_s5_both.jpg/800px-Elephants_Dream_s5_both.jpg" group-title="Movies",Elephants Dream (2006)
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
 #--------------------------------------------
-# SERIES - DEMO EPISODES (Google Samples)
+# SERIES
 #--------------------------------------------
-#EXTINF:-1 tvg-id="series1" tvg-name="What We Do in the Shadows" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg" group-title="Series",What Car Can You Get For A Grand? S01E01 | Documentary | Demo Episode
+
+#EXTINF:-1 tvg-id="series1" tvg-name="Car Reviews S01E01" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg" group-title="Series",Car Reviews - Episode 1
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4
 
-#EXTINF:-1 tvg-id="series2" tvg-name="Volleyball" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg" group-title="Series",Volkswagen GTI Review S01E02 | Automotive | Demo Episode
+#EXTINF:-1 tvg-id="series2" tvg-name="Car Reviews S01E02" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg" group-title="Series",Car Reviews - Episode 2
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4
 
-#EXTINF:-1 tvg-id="series3" tvg-name="We Are Going On Bullrun" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg" group-title="Series",We Are Going On Bullrun S01E03 | Adventure/Rally | Demo Episode
+#EXTINF:-1 tvg-id="series3" tvg-name="Adventure S01E01" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg" group-title="Series",Adventure - Episode 1
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4
 
 #--------------------------------------------
-# TEST STREAMS (APPLE HLS SAMPLES)
+# TEST STREAMS
 #--------------------------------------------
-#EXTINF:-1 tvg-id="test1" tvg-name="Apple HLS Test 16x9" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Test Stream 16x9 - Multi-bitrate
+
+#EXTINF:-1 tvg-id="test1" tvg-name="Test Stream 1" tvg-logo="https://picsum.photos/200?random=91" group-title="Test",Apple HLS Test 16x9
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="test2" tvg-name="Apple HLS Test 4x3" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Test Stream 4x3 - Legacy Format
+#EXTINF:-1 tvg-id="test2" tvg-name="Test Stream 2" tvg-logo="https://picsum.photos/200?random=92" group-title="Test",Apple HLS Test 4x3
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="test3" tvg-name="Apple HLS Advanced" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8" group-title="Test Streams",Apple HLS Advanced Test - TS Format
+#EXTINF:-1 tvg-id="test3" tvg-name="Test Stream 3" tvg-logo="https://picsum.photos/200?random=93" group-title="Test",Apple HLS Advanced
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
