@@ -35,19 +35,19 @@ https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
 #--------------------------------------------
 # BLENDER MOVIES (Creative Commons CC-BY)
 #--------------------------------------------
-#EXTINF:-1 tvg-id="blender_channel" tvg-name="Blender Open Movies 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" group-title="Movies",Blender Open Movies Channel - 24/7 Animation Stream
+#EXTINF:-1 tvg-id="blender_channel" tvg-name="Blender Open Movies 24/7" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" group-title="Movies",Blender Open Movies Channel - 24/7 Animation Stream
 https://ireplay.tv/test/blender.m3u8
 
-#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny (2008)" tvg-logo="https://download.blender.org/demo/movies/BBB/bbb_splash.png" group-title="Movies",Big Buck Bunny (2008) | Comedy | 10min | Director: Sacha Goedegebure | CC-BY 3.0
+#EXTINF:-1 tvg-id="bigbuckbunny" tvg-name="Big Buck Bunny (2008)" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" group-title="Movies",Big Buck Bunny (2008) | Comedy | 10min | Director: Sacha Goedegebure | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel (2010)" tvg-logo="https://download.blender.org/demo/movies/Sintel.2010.1080p.mkv.jpg" group-title="Movies",Sintel (2010) | Fantasy/Drama | 15min | Director: Colin Levy | CC-BY 3.0
+#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel (2010)" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg" group-title="Movies",Sintel (2010) | Fantasy/Drama | 15min | Director: Colin Levy | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
-#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel (2012)" tvg-logo="https://download.blender.org/demo/movies/ToS/ToS-4k-1920.jpg" group-title="Movies",Tears of Steel (2012) | Sci-Fi/Action | 12min | Director: Ian Hubert | CC-BY 3.0
+#EXTINF:-1 tvg-id="tearsofsteel" tvg-name="Tears of Steel (2012)" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg" group-title="Movies",Tears of Steel (2012) | Sci-Fi/Action | 12min | Director: Ian Hubert | CC-BY 3.0
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
-#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream (2006)" tvg-logo="https://download.blender.org/demo/movies/elephantsdream_1024.jpg" group-title="Movies",Elephants Dream (2006) | Surreal/Fantasy | 11min | Director: Bassam Kurdali | CC-BY 2.5
+#EXTINF:-1 tvg-id="elephantsdream" tvg-name="Elephants Dream (2006)" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg" group-title="Movies",Elephants Dream (2006) | Surreal/Fantasy | 11min | Director: Bassam Kurdali | CC-BY 2.5
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
 #--------------------------------------------
@@ -83,13 +83,13 @@ http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBul
 #--------------------------------------------
 # SHORT FILMS - BLENDER COLLECTION
 #--------------------------------------------
-#EXTINF:-1 tvg-id="spring" tvg-name="Spring (2019)" tvg-logo="https://download.blender.org/demo/movies/spring_poster.jpg" group-title="Short Films",Spring (2019) | Fantasy/Drama | 8min | Director: Andy Goralczyk | Shepherd & Ancient Spirits | CC-BY 4.0
+#EXTINF:-1 tvg-id="spring" tvg-name="Spring (2019)" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" group-title="Short Films",Spring (2019) | Fantasy/Drama | 8min | Director: Andy Goralczyk | Shepherd & Ancient Spirits | CC-BY 4.0
 https://download.blender.org/demo/movies/spring_1080p.mp4
 
-#EXTINF:-1 tvg-id="cosmoslaundromat" tvg-name="Cosmos Laundromat (2015)" tvg-logo="https://download.blender.org/demo/movies/cosmos_laundromat_poster.jpg" group-title="Short Films",Cosmos Laundromat (2015) | Surreal/Comedy | 12min | Flying Sheep Adventure | CC-BY 4.0
+#EXTINF:-1 tvg-id="cosmoslaundromat" tvg-name="Cosmos Laundromat (2015)" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg" group-title="Short Films",Cosmos Laundromat (2015) | Surreal/Comedy | 12min | Flying Sheep Adventure | CC-BY 4.0
 https://download.blender.org/demo/movies/cosmos_laundromat_1080p.mp4
 
-#EXTINF:-1 tvg-id="glasshalffull" tvg-name="Glass Half (2015)" tvg-logo="https://download.blender.org/demo/movies/glass_half.jpg" group-title="Short Films",Glass Half (2015) | Comedy | 3min | Art Critics Debate | CC-BY 4.0
+#EXTINF:-1 tvg-id="glasshalffull" tvg-name="Glass Half (2015)" tvg-logo="https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg" group-title="Short Films",Glass Half (2015) | Comedy | 3min | Art Critics Debate | CC-BY 4.0
 https://download.blender.org/demo/movies/glass_half_1080p.mp4
 
 #--------------------------------------------
