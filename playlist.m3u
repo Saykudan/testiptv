@@ -2,32 +2,12 @@
 #--------------------------------------------
 # LIVE TV CHANNELS - LEGAL FREE STREAMS
 #--------------------------------------------
-#EXTINF:-1 tvg-id="nasa" tvg-name="NASA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Public
-https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
-
-#EXTINF:-1 tvg-id="nasatv" tvg-name="NASA TV Media" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" group-title="Live TV",NASA TV Media
-https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master.m3u8
-
-#EXTINF:-1 tvg-id="weather" tvg-name="WeatherNation" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/77/WeatherNation_TV_logo.png" group-title="Live TV",WeatherNation TV
-https://weathernationtv.roku.wurl.com/manifest/playlist.m3u8
-
-#EXTINF:-1 tvg-id="cheddar" tvg-name="Cheddar News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cheddar_News.svg/1200px-Cheddar_News.svg.png" group-title="Live TV",Cheddar News
-https://cheddar-cheddar-1-ca.samsung.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="abc_news" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/ABC_News_Live_2018.png" group-title="Live TV",ABC News Live
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 
 #EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
-
-#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/56/Bloomberg_Television_logo.svg" group-title="Live TV",Bloomberg TV
-https://bloomberg-bloomberg-1-eu.rakuten.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="rt" tvg-name="RT News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" group-title="Live TV",RT International
-https://rt-glb.rttv.com/dvr/rtnews/playlist.m3u8
-
-#EXTINF:-1 tvg-id="pbs" tvg-name="PBS America" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/50/PBS_logo.svg" group-title="Live TV",PBS America
-https://pbs-samsunguk.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
