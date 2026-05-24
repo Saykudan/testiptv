@@ -1,37 +1,31 @@
 #EXTM3U
 
-#--------------------------------------------
-# LIVE TV - REVIEW TEST STREAMS
-#--------------------------------------------
+#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/CBS_News_Logo.png" group-title="Live TV",CBS News 24/7
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
-#EXTINF:-1 tvg-id="review-live-16x9" tvg-name="Review Live 16x9" group-title="Live TV",Review Live - Apple HLS 16x9
+#EXTINF:-1 tvg-id="newsmax" tvg-name="Newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Newsmax_logo.svg/1200px-Newsmax_logo.svg.png" group-title="Live TV",Newsmax
+https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+
+#EXTINF:-1 tvg-id="apple_hls_16x9" tvg-name="Apple HLS Test 16x9" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" group-title="Live TV",Apple HLS Test 16x9
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="review-live-4x3" tvg-name="Review Live 4x3" group-title="Live TV",Review Live - Apple HLS 4x3
+#EXTINF:-1 tvg-id="apple_hls_4x3" tvg-name="Apple HLS Test 4x3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" group-title="Live TV",Apple HLS Test 4x3
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="review-live-advanced" tvg-name="Review Live Advanced" group-title="Live TV",Review Live - Apple Advanced HLS
-https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
-
-#--------------------------------------------
-# MOVIES - REVIEW TEST VOD
-#--------------------------------------------
-
-#EXTINF:-1 tvg-id="review-movie-1" tvg-name="Review Movie 1" group-title="Movies",Review Movie - HLS Sample
+#EXTINF:-1 tvg-id="mux_test" tvg-name="Mux HLS Test" tvg-logo="https://avatars.githubusercontent.com/u/16199997?s=200&v=4" group-title="Live TV",Mux HLS Test
 https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 
-#EXTINF:-1 tvg-id="review-movie-2" tvg-name="Review Movie 2" group-title="Movies",Review Movie - Apple 16x9 Sample
-https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Movies",Big Buck Bunny
+https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4
 
-#--------------------------------------------
-# SERIES - REVIEW TEST EPISODES
-#--------------------------------------------
+#EXTINF:-1 tvg-id="sintel_trailer" tvg-name="Sintel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Movies",Sintel Trailer
+https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4
 
-#EXTINF:-1 tvg-id="review-series-s01e01" tvg-name="Review Series S01E01" group-title="Series",Review Series - S01E01
-https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="sintel_s01e01" tvg-name="Sintel S01E01" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Series",Sintel - Episode 1
+https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4
 
-#EXTINF:-1 tvg-id="review-series-s01e02" tvg-name="Review Series S01E02" group-title="Series",Review Series - S01E02
-https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
+#EXTINF:-1 tvg-id="bunny_s01e01" tvg-name="Bunny Shorts S01E01" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Series",Bunny Shorts - Episode 1
+https://download.blender.org/peach/trailer/trailer_iphone.m4v
 
-#EXTINF:-1 tvg-id="review-series-s01e03" tvg-name="Review Series S01E03" group-title="Series",Review Series - S01E03
-https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
+#EXTINF:-1 tvg-id="bunny_s01e02" tvg-name="Bunny Shorts S01E02" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Series",Bunny Shorts - Episode 2
+https://download.blender.org/peach/trailer/trailer_720x405.mov
