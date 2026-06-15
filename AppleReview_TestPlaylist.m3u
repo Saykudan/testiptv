@@ -18,26 +18,11 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="Live TV",CBS News 24/7
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
-#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" group-title="Movies",Big Buck Bunny
-https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
-
 #EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" group-title="Movies",Sintel
 https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4
 
 #EXTINF:-1 tvg-id="tears_of_steel" tvg-name="Tears of Steel" group-title="Movies",Tears of Steel
 https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
 
-#EXTINF:-1 tvg-id="elephants_dream" tvg-name="Elephants Dream" group-title="Movies",Elephants Dream
-https://archive.org/download/ElephantsDream/ed_hd.mp4
-
-#EXTINF:-1 tvg-id="coffee_run" tvg-name="Coffee Run" group-title="Movies",Coffee Run
-https://archive.org/download/coffee-run/Coffee%20Run.mp4
-
-#EXTINF:-1 tvg-id="agent_327" tvg-name="Agent 327" group-title="Series",Agent 327
-https://archive.org/download/agent327operationbarbershop/agent327-1080.mp4
-
-#EXTINF:-1 tvg-id="cosmos_laundromat" tvg-name="Cosmos Laundromat" group-title="Series",Cosmos Laundromat
-https://archive.org/download/cosmos-laundromat/Cosmos%20Laundromat.mp4
-
-#EXTINF:-1 tvg-id="charge" tvg-name="Charge" group-title="Series",Charge
-https://archive.org/download/charge_202601/Charge.mp4
+#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" group-title="Series",Big Buck Bunny
+https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
