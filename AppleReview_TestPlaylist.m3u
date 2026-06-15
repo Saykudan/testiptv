@@ -30,10 +30,10 @@ https://bloomberg.com/media-manifest/streams/us.m3u8
 #EXTINF:-1 tvg-id="test_live" tvg-name="HLS Reference Channel" group-title="Live TV",HLS Reference Channel
 https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
 
-#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Movies",Big Buck Bunny
+#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" group-title="Movies",Big Buck Bunny
 https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Movies",Sintel
+#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" group-title="Movies",Sintel
 https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4
 
 #EXTINF:-1 tvg-id="tears_of_steel" tvg-name="Tears of Steel" group-title="Movies",Tears of Steel
@@ -45,17 +45,11 @@ https://archive.org/download/ElephantsDream/ed_hd.mp4
 #EXTINF:-1 tvg-id="coffee_run" tvg-name="Coffee Run" group-title="Movies",Coffee Run
 https://archive.org/download/coffee-run/Coffee%20Run.mp4
 
-#EXTINF:-1 tvg-id="caminandes" tvg-name="Caminandes" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Series",Caminandes
+#EXTINF:-1 tvg-id="caminandes_llama_drama" tvg-name="Caminandes" group-title="Series",Caminandes
 https://download.blender.org/peach/trailer/trailer_iphone.m4v
 
-#EXTINF:-1 tvg-id="cosmos_laundromat" tvg-name="Cosmos Laundromat" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Series",Cosmos Laundromat
+#EXTINF:-1 tvg-id="agent_327" tvg-name="Agent 327" group-title="Series",Agent 327
 https://download.blender.org/peach/trailer/trailer_720x405.mov
 
-#EXTINF:-1 tvg-id="spring" tvg-name="Spring" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" group-title="Series",Spring
+#EXTINF:-1 tvg-id="glass_half" tvg-name="Glass Half" group-title="Series",Glass Half
 https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4
-
-#EXTINF:-1 tvg-id="agent_327" tvg-name="Agent 327" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Series",Agent 327
-https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
-
-#EXTINF:-1 tvg-id="hero" tvg-name="Hero" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Sintel_poster.jpg" group-title="Series",Hero
-https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
