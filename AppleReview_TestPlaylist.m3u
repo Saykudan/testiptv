@@ -1,15 +1,15 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="apple_16x9" tvg-name="Apple Test Channel HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" group-title="Live TV",Apple Test Channel HD
+#EXTINF:-1 tvg-id="apple_16x9" tvg-name="Apple Test Channel HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/apple-tv-plus.png" group-title="Live TV",Apple Test Channel HD
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="apple_4x3" tvg-name="Apple Test Channel SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" group-title="Live TV",Apple Test Channel SD
+#EXTINF:-1 tvg-id="apple_4x3" tvg-name="Apple Test Channel SD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/apple-tv-plus.png" group-title="Live TV",Apple Test Channel SD
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
 #EXTINF:-1 tvg-id="mux_test" tvg-name="Demo Stream" tvg-logo="https://avatars.githubusercontent.com/u/16199997?s=200&v=4" group-title="Live TV",Demo Stream
 https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 
-#EXTINF:-1 tvg-id="redbull" tvg-name="Red Bull TV" group-title="Live TV",Red Bull TV
+#EXTINF:-1 tvg-id="redbull" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png" group-title="Live TV",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
 #EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="Live TV",CBS News 24/7
@@ -18,23 +18,23 @@ https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/m
 #EXTINF:-1 tvg-id="nasa" tvg-name="NASA TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/nasa-tv-us.png" group-title="Live TV",NASA TV
 https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
 
-#EXTINF:-1 tvg-id="dw" tvg-name="DW English" group-title="Live TV",DW English
+#EXTINF:-1 tvg-id="dw" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/dw-english-int.png" group-title="Live TV",DW English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
 #EXTINF:-1 tvg-id="tastemade" tvg-name="Tastemade" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/tastemade-us.png" group-title="Live TV",Tastemade
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
 
-#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg TV" group-title="Live TV",Bloomberg TV
+#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/bloomberg-television-us.png" group-title="Live TV",Bloomberg TV
 https://bloomberg.com/media-manifest/streams/us.m3u8
 
-#EXTINF:-1 tvg-id="test_live" tvg-name="HLS Reference Channel" group-title="Live TV",HLS Reference Channel
+#EXTINF:-1 tvg-id="test_live" tvg-name="HLS Reference Channel" tvg-logo="https://avatars.githubusercontent.com/u/16199997?s=200&v=4" group-title="Live TV",HLS Reference Channel
 https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
 
 #EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" group-title="Movies",Big Buck Bunny
 https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
 
 #EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" group-title="Movies",Sintel
-https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4
+https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4
 
 #EXTINF:-1 tvg-id="tears_of_steel" tvg-name="Tears of Steel" group-title="Movies",Tears of Steel
 https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
@@ -45,11 +45,11 @@ https://archive.org/download/ElephantsDream/ed_hd.mp4
 #EXTINF:-1 tvg-id="coffee_run" tvg-name="Coffee Run" group-title="Movies",Coffee Run
 https://archive.org/download/coffee-run/Coffee%20Run.mp4
 
-#EXTINF:-1 tvg-id="caminandes_llama_drama" tvg-name="Caminandes" group-title="Series",Caminandes
-https://download.blender.org/peach/trailer/trailer_iphone.m4v
-
 #EXTINF:-1 tvg-id="agent_327" tvg-name="Agent 327" group-title="Series",Agent 327
-https://download.blender.org/peach/trailer/trailer_720x405.mov
+https://archive.org/download/agent327operationbarbershop/agent327-1080.mp4
 
-#EXTINF:-1 tvg-id="glass_half" tvg-name="Glass Half" group-title="Series",Glass Half
-https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4
+#EXTINF:-1 tvg-id="cosmos_laundromat" tvg-name="Cosmos Laundromat" group-title="Series",Cosmos Laundromat
+https://archive.org/download/cosmos-laundromat/Cosmos%20Laundromat.mp4
+
+#EXTINF:-1 tvg-id="charge" tvg-name="Charge" group-title="Series",Charge
+https://archive.org/download/charge_202601/Charge.mp4
