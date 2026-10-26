@@ -1,28 +1,65 @@
 #EXTM3U
+#PLAYLIST:IPTV Core App Review Demo
+# This playlist contains only public test streams and Creative Commons open movies.
+# It requires no username, password, subscription, or private IPTV provider.
 
-#EXTINF:-1 tvg-id="apple_16x9" tvg-name="Apple Test Channel HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/apple-tv-plus.png" group-title="Live TV",Apple Test Channel HD
+# --- LIVE TV ---------------------------------------------------------------
+
+#EXTINF:-1 tvg-id="apple_16x9" tvg-name="Apple HLS Test HD" group-title="Live TV - Test Streams",Apple HLS Test HD
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
 
-#EXTINF:-1 tvg-id="apple_4x3" tvg-name="Apple Test Channel SD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/apple-tv-plus.png" group-title="Live TV",Apple Test Channel SD
+#EXTINF:-1 tvg-id="apple_4x3" tvg-name="Apple HLS Test SD" group-title="Live TV - Test Streams",Apple HLS Test SD
 https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
 
-#EXTINF:-1 tvg-id="mux_test" tvg-name="Demo Stream" tvg-logo="https://avatars.githubusercontent.com/u/16199997?s=200&v=4" group-title="Live TV",Demo Stream
+#EXTINF:-1 tvg-id="mux_demo" tvg-name="Mux Demo Stream" tvg-logo="https://avatars.githubusercontent.com/u/16199997?s=200&v=4" group-title="Live TV - Test Streams",Mux Demo Stream
 https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 
-#EXTINF:-1 tvg-id="dw" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/dw-english-int.png" group-title="Live TV",DW English
+#EXTINF:-1 tvg-id="dw_english" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/dw-english-int.png" group-title="Live TV - News",DW English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
-#EXTINF:-1 tvg-id="redbull" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png" group-title="Live TV",Red Bull TV
+#EXTINF:-1 tvg-id="red_bull_tv" tvg-name="Red Bull TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/red-bull-tv-int.png" group-title="Live TV - Sports",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
-#EXTINF:-1 tvg-id="cbsn" tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="Live TV",CBS News 24/7
+#EXTINF:-1 tvg-id="cbs_news" tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="Live TV - News",CBS News 24/7
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
-#EXTINF:-1 tvg-id="sintel" tvg-name="Sintel" group-title="Movies",Sintel
+# --- MOVIES: OPEN / CC-LICENSED TEST CONTENT ------------------------------
+
+#EXTINF:-1 tvg-id="movie_big_buck_bunny" tvg-name="Big Buck Bunny" tvg-logo="https://image.tmdb.org/t/p/w500/i9jJzvoXET4D9pOkoEwncSdNNER.jpg" group-title="Movies - Open Films",Big Buck Bunny
+https://video.blender.org/object-storage/web_videos/bf1f3fb5-b119-4f9f-9930-8e20e892b898-720.mp4
+
+#EXTINF:-1 tvg-id="movie_sintel" tvg-name="Sintel" tvg-logo="https://image.tmdb.org/t/p/w500/4BMG9hk9NvSBeQvC82sVmVRK140.jpg" group-title="Movies - Open Films",Sintel
 https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4
 
-#EXTINF:-1 tvg-id="tears_of_steel" tvg-name="Tears of Steel" group-title="Movies",Tears of Steel
+#EXTINF:-1 tvg-id="movie_tears_of_steel" tvg-name="Tears of Steel" tvg-logo="https://image.tmdb.org/t/p/w500/8qy3jRmaHR7f8VZh3iXCqCWfFsH.jpg" group-title="Movies - Open Films",Tears of Steel
 https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
 
-#EXTINF:-1 tvg-id="big_buck_bunny" tvg-name="Big Buck Bunny" group-title="Series",Big Buck Bunny
-https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v
+#EXTINF:-1 tvg-id="movie_coffee_run" tvg-name="Coffee Run" tvg-logo="https://image.tmdb.org/t/p/w500/tFaE5KZOzTTTaNAEDD8CY1ZBjei.jpg" group-title="Movies - Open Films",Coffee Run
+https://video.blender.org/object-storage/web_videos/ff8fe61b-026f-4f07-b66b-2a790d6f6ab1-720.mp4
+
+#EXTINF:-1 tvg-id="movie_sprite_fright" tvg-name="Sprite Fright" tvg-logo="https://image.tmdb.org/t/p/w500/AjWJQOogG4Irpff6K49tzrUTb1s.jpg" group-title="Movies - Open Films",Sprite Fright
+https://video.blender.org/object-storage/web_videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-804.mp4
+
+# --- SERIES: GROUPED EPISODE ROWS -----------------------------------------
+# SxxExx labels intentionally exercise the app's real M3U episode-grouping path.
+
+#EXTINF:-1 tvg-id="blender_open_movies_s01e01" tvg-name="Blender Open Movies S01E01 - Big Buck Bunny" tvg-logo="https://image.tmdb.org/t/p/w500/i9jJzvoXET4D9pOkoEwncSdNNER.jpg" group-title="Series - Open Collections",Blender Open Movies - S01E01 - Big Buck Bunny
+https://video.blender.org/object-storage/web_videos/bf1f3fb5-b119-4f9f-9930-8e20e892b898-720.mp4
+
+#EXTINF:-1 tvg-id="blender_open_movies_s01e02" tvg-name="Blender Open Movies S01E02 - Sintel" tvg-logo="https://image.tmdb.org/t/p/w500/4BMG9hk9NvSBeQvC82sVmVRK140.jpg" group-title="Series - Open Collections",Blender Open Movies - S01E02 - Sintel
+https://archive.org/download/Sintel/sintel-2048-surround_512kb.mp4
+
+#EXTINF:-1 tvg-id="blender_open_movies_s01e03" tvg-name="Blender Open Movies S01E03 - Tears of Steel" tvg-logo="https://image.tmdb.org/t/p/w500/8qy3jRmaHR7f8VZh3iXCqCWfFsH.jpg" group-title="Series - Open Collections",Blender Open Movies - S01E03 - Tears of Steel
+https://download.blender.org/demo/movies/ToS/tears_of_steel_720p.mov
+
+#EXTINF:-1 tvg-id="blender_studio_shorts_s01e01" tvg-name="Blender Studio Shorts S01E01 - Coffee Run" tvg-logo="https://image.tmdb.org/t/p/w500/tFaE5KZOzTTTaNAEDD8CY1ZBjei.jpg" group-title="Series - Open Collections",Blender Studio Shorts - S01E01 - Coffee Run
+https://video.blender.org/object-storage/web_videos/ff8fe61b-026f-4f07-b66b-2a790d6f6ab1-720.mp4
+
+#EXTINF:-1 tvg-id="blender_studio_shorts_s01e02" tvg-name="Blender Studio Shorts S01E02 - Sprite Fright" tvg-logo="https://image.tmdb.org/t/p/w500/AjWJQOogG4Irpff6K49tzrUTb1s.jpg" group-title="Series - Open Collections",Blender Studio Shorts - S01E02 - Sprite Fright
+https://video.blender.org/object-storage/web_videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-804.mp4
+
+#EXTINF:-1 tvg-id="blender_studio_shorts_s01e03" tvg-name="Blender Studio Shorts S01E03 - Wing It!" tvg-logo="https://video.blender.org/lazy-static/thumbnails/d817984e-6b27-46b9-9222-3952afd3e28c.jpg" group-title="Series - Open Collections",Blender Studio Shorts - S01E03 - Wing It!
+https://video.blender.org/object-storage/web_videos/9178581e-4d24-4a67-adf2-a30eadfaf32f-1080.mp4
+
+#EXTINF:-1 tvg-id="blender_studio_shorts_s01e04" tvg-name="Blender Studio Shorts S01E04 - Hero" tvg-logo="https://video.blender.org/lazy-static/thumbnails/b2806123-13f5-43c7-a5da-6b263db351d3.jpg" group-title="Series - Open Collections",Blender Studio Shorts - S01E04 - Hero
+https://video.blender.org/object-storage/web_videos/6c79205c-bd3a-42b5-a8a2-ce7a2a166154-536.mp4
